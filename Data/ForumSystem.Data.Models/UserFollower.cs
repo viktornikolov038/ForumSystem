@@ -7,11 +7,11 @@ namespace ForumSystem.Data.Models
     {
         public string UserId { get; set; }
 
-        public ForumUser User { get; set; }
+        public ApplicationUser User { get; set; }
 
         public string FollowerId { get; set; }
 
-        public ForumUser Follower { get; set; }
+        public ApplicationUser Follower { get; set; }
 
         public DateTime CreatedOn { get; set; }
 

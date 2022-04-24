@@ -1,4 +1,7 @@
-﻿namespace ForumSystem.Web.ViewModels
+﻿using ForumSystem.Web.Infrastructure.Attributes;
+using System.ComponentModel.DataAnnotations;
+
+namespace ForumSystem.Web.ViewModels
 {
     public class ErrorViewModel
     {
@@ -6,4 +9,5 @@
 
         public bool ShowRequestId => !string.IsNullOrEmpty(this.RequestId);
     }
+    
 }

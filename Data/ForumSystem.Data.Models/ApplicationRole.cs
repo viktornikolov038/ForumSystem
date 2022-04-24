@@ -28,4 +28,5 @@ namespace ForumSystem.Data.Models
 
         public DateTime? DeletedOn { get; set; }
     }
+
 }

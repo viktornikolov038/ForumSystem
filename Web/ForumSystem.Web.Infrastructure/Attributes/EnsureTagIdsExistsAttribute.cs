@@ -1,0 +1,32 @@
+﻿using ForumSystem.Common;
+using ForumSystem.Services.Tags;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ForumSystem.Web.Infrastructure.Attributes
+{
+    public class EnsureTagIdsExistsAttribute : ValidationAttribute
+    {
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            if (!(value is IEnumerable<int> collection))
+            {
+                return new ValidationResult(ErrorMessages.TagIsRequiredErrorMessage);
+            }
+
+            var tagsService = validationContext.GetService<ITagsService>();
+            var areExisting = tagsService.AreExistingAsync(collection).GetAwaiter().GetResult();
+            if (!areExisting)
+            {
+                return new ValidationResult(this.ErrorMessage);
+            }
+
+            return ValidationResult.Success;
+        }
+    }
+}

@@ -7,8 +7,8 @@
     using Microsoft.AspNetCore.Mvc;
 
     [Authorize(Roles = GlobalConstants.AdministratorRoleName)]
-    [Area("Administration")]
-    public class AdministrationController : BaseController
+    [Area(GlobalConstants.AdministratorAreaName)]
+    public abstract class AdminController : Controller
     {
     }
 }
