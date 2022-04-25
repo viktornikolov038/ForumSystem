@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace ForumNet.Services.Providers.Cloudinary
+namespace ForumSystem.Services.Providers.Cloudinary
 {
     public interface ICloudinaryService
     {

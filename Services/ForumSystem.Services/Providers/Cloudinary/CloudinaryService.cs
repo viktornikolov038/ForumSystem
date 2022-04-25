@@ -6,7 +6,7 @@ namespace ForumSystem.Services.Providers.Cloudinary
     using System.Threading.Tasks;
     using CloudinaryDotNet;
     using CloudinaryDotNet.Actions;
-    using ForumNet.Services.Providers.Cloudinary;
+    using ForumSystem.Services.Providers.Cloudinary;
     using Microsoft.AspNetCore.Http;
     public class CloudinaryService : ICloudinaryService
     {

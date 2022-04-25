@@ -42,7 +42,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForumSystem.Web.Tests", "Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForumSystem.Web.ViewModels", "Web\ForumSystem.Web.ViewModels\ForumSystem.Web.ViewModels.csproj", "{13B7AACB-9C85-4409-8D4B-95A67D0DFFF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumSystem.Web.InputModels", "ForumSystem.Web.InputModels\ForumSystem.Web.InputModels.csproj", "{C0184D13-4275-40DF-96CA-47081CA56CA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForumSystem.Web.InputModels", "ForumSystem.Web.InputModels\ForumSystem.Web.InputModels.csproj", "{C0184D13-4275-40DF-96CA-47081CA56CA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
