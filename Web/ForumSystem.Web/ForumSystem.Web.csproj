@@ -47,4 +47,8 @@
     
     <ProjectReference Include="..\ForumSystem.Web.ViewModels\ForumSystem.Web.ViewModels.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Pages\Account\" />
+  </ItemGroup>
 </Project>

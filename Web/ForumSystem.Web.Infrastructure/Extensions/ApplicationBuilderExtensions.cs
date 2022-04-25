@@ -1,4 +1,5 @@
 ﻿using ForumSystem.Data;
+using ForumSystem.Data.Seeding;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,7 +28,7 @@ namespace ForumSystem.Web.Infrastructure.Extensions
             using var serviceScope = app.ApplicationServices.CreateScope();
             using var dbContext = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
-            new ForumDbContextSeeder()
+            new ApplicationDbContextSeeder()
                 .SeedAsync(dbContext, serviceScope.ServiceProvider)
                 .GetAwaiter()
                 .GetResult();

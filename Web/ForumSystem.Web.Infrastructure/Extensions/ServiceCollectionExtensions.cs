@@ -1,4 +1,9 @@
-﻿using CloudinaryDotNet;
+﻿
+using CloudinaryDotNet;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using ForumNet.Services.Providers.Cloudinary;
 using ForumSystem.Data;
 using ForumSystem.Data.Models;
@@ -13,15 +18,6 @@ using ForumSystem.Services.Replies;
 using ForumSystem.Services.Reports;
 using ForumSystem.Services.Tags;
 using ForumSystem.Services.Users;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ForumSystem.Web.Infrastructure.Extensions
 {
@@ -54,12 +50,12 @@ namespace ForumSystem.Web.Infrastructure.Extensions
 
         public static IServiceCollection AddResponseCompressionForHttps(this IServiceCollection services)
             => services
-                .AddResponseCompression(options => options
+                .AddResponseCompressionForHttps(options => options
                     .EnableForHttps = true);
 
         public static IServiceCollection AddAntiforgeryHeader(this IServiceCollection services)
             => services
-                .AddAntiforgery(options => options
+                .AddAntiforgeryHeader(options => options
                     .HeaderName = AntiforgeryHeaderName);
 
         public static IServiceCollection AddFacebookAuthentication(
@@ -67,7 +63,7 @@ namespace ForumSystem.Web.Infrastructure.Extensions
             IConfiguration configuration)
         {
             services
-                .AddAuthentication()
+                .AddFacebookAuthentication()
                 .AddFacebook(facebookOptions =>
                 {
                     facebookOptions.AppId = configuration["Facebook:AppId"];
@@ -82,11 +78,8 @@ namespace ForumSystem.Web.Infrastructure.Extensions
             IConfiguration configuration)
         {
             services
-                .AddAuthentication()
-                .AddGoogle(googleOptions =>
-                {
-                    googleOptions.ClientId = configuration["Google:ClientId"];
-                    googleOptions.ClientSecret = configuration["Google:ClientSecret"];
+                .AddAuthenticationCore()
+                .AddGoogleAuthentication(configuration
                 });
 
             return services;

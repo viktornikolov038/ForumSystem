@@ -1,28 +1,67 @@
 ﻿namespace ForumSystem.Web.Controllers
 {
     using System.Diagnostics;
-
+    using System.Threading.Tasks;
+    using ForumSystem.Services.Posts;
+    using ForumSystem.Services.Reactions;
+    using ForumSystem.Services.Users;
     using ForumSystem.Web.ViewModels;
-
+    using ForumSystem.Web.ViewModels.Home;
     using Microsoft.AspNetCore.Mvc;
 
-    public class HomeController : BaseController
+    public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IUsersService usersService;
+        private readonly IPostsService postsService;
+        private readonly IPostReactionsService postReactionsService;
+        private readonly IReplyReactionsService replyReactionsService;
+
+        public HomeController(
+            IUsersService usersService,
+            IPostsService postsService,
+            IPostReactionsService postReactionsService,
+            IReplyReactionsService replyReactionsService)
         {
-            return this.View();
+            this.usersService = usersService;
+            this.postsService = postsService;
+            this.postReactionsService = postReactionsService;
+            this.replyReactionsService = replyReactionsService;
         }
 
-        public IActionResult Privacy()
+        public IActionResult Index() => this.RedirectToAction("Trending", "Posts");
+
+        public IActionResult Guidelines() => this.View();
+
+        public IActionResult Privacy() => this.View();
+
+        public IActionResult NotFound404() => this.View();
+
+        public async Task<IActionResult> About()
         {
-            return this.View();
+            var postsReactionsCount = await this.postReactionsService.GetTotalCountAsync();
+            var repliesReactionsCount = await this.replyReactionsService.GetTotalCountAsync();
+
+            var reactionsCount = postsReactionsCount + repliesReactionsCount;
+            var postsCount = await this.postsService.GetCountAsync();
+            var usersCount = await this.usersService.GetTotalCountAsync();
+            var admins = await this.usersService.GetAdminsAsync<HomeAdminViewModel>();
+
+            var viewModel = new HomeAboutViewModel
+            {
+                ReactionsCount = reactionsCount,
+                PostsCount = postsCount,
+                UsersCount = usersCount,
+                Admins = admins
+            };
+
+            return this.View(viewModel);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
-        {
-            return this.View(
-                new ErrorViewModel { RequestId = Activity.Current?.Id ?? this.HttpContext.TraceIdentifier });
-        }
+            => this.View(new ErrorViewModel
+            {
+                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+            });
     }
 }
