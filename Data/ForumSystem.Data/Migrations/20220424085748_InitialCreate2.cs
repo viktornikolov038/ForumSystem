@@ -27,7 +27,7 @@ namespace ForumSystem.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ForumUser",
+                name: "ApplicationUser",
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -57,7 +57,7 @@ namespace ForumSystem.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ForumUser", x => x.Id);
+                    table.PrimaryKey("PK_ApplicationUser", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -95,15 +95,15 @@ namespace ForumSystem.Data.Migrations
                 {
                     table.PrimaryKey("PK_Messages", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Messages_ForumUser_AuthorId",
+                        name: "FK_Messages_ApplicationUser_AuthorId",
                         column: x => x.AuthorId,
-                        principalTable: "ForumUser",
+                        principalTable: "ApplicationUser",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Messages_ForumUser_ReceiverId",
+                        name: "FK_Messages_ApplicationUser_ReceiverId",
                         column: x => x.ReceiverId,
-                        principalTable: "ForumUser",
+                        principalTable: "ApplicationUser",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -136,9 +136,9 @@ namespace ForumSystem.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Posts_ForumUser_AuthorId",
+                        name: "FK_Posts_ApplicationUser_AuthorId",
                         column: x => x.AuthorId,
-                        principalTable: "ForumUser",
+                        principalTable: "ApplicationUser",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -158,15 +158,15 @@ namespace ForumSystem.Data.Migrations
                 {
                     table.PrimaryKey("PK_UsersFollowers", x => new { x.UserId, x.FollowerId });
                     table.ForeignKey(
-                        name: "FK_UsersFollowers_ForumUser_FollowerId",
+                        name: "FK_UsersFollowers_ApplicationUser_FollowerId",
                         column: x => x.FollowerId,
-                        principalTable: "ForumUser",
+                        principalTable: "ApplicationUser",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_UsersFollowers_ForumUser_UserId",
+                        name: "FK_UsersFollowers_ApplicationUser_UserId",
                         column: x => x.UserId,
-                        principalTable: "ForumUser",
+                        principalTable: "ApplicationUser",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -187,9 +187,9 @@ namespace ForumSystem.Data.Migrations
                 {
                     table.PrimaryKey("PK_PostReactions", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_PostReactions_ForumUser_AuthorId",
+                        name: "FK_PostReactions_ApplicationUser_AuthorId",
                         column: x => x.AuthorId,
-                        principalTable: "ForumUser",
+                        principalTable: "ApplicationUser",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -218,9 +218,9 @@ namespace ForumSystem.Data.Migrations
                 {
                     table.PrimaryKey("PK_PostReports", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_PostReports_ForumUser_AuthorId",
+                        name: "FK_PostReports_ApplicationUser_AuthorId",
                         column: x => x.AuthorId,
-                        principalTable: "ForumUser",
+                        principalTable: "ApplicationUser",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -275,9 +275,9 @@ namespace ForumSystem.Data.Migrations
                 {
                     table.PrimaryKey("PK_Replies", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Replies_ForumUser_AuthorId",
+                        name: "FK_Replies_ApplicationUser_AuthorId",
                         column: x => x.AuthorId,
-                        principalTable: "ForumUser",
+                        principalTable: "ApplicationUser",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -310,9 +310,9 @@ namespace ForumSystem.Data.Migrations
                 {
                     table.PrimaryKey("PK_ReplyReactions", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ReplyReactions_ForumUser_AuthorId",
+                        name: "FK_ReplyReactions_ApplicationUser_AuthorId",
                         column: x => x.AuthorId,
-                        principalTable: "ForumUser",
+                        principalTable: "ApplicationUser",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -341,9 +341,9 @@ namespace ForumSystem.Data.Migrations
                 {
                     table.PrimaryKey("PK_ReplyReports", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ReplyReports_ForumUser_AuthorId",
+                        name: "FK_ReplyReports_ApplicationUser_AuthorId",
                         column: x => x.AuthorId,
-                        principalTable: "ForumUser",
+                        principalTable: "ApplicationUser",
                         principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_ReplyReports_Replies_ReplyId",
@@ -359,8 +359,8 @@ namespace ForumSystem.Data.Migrations
                 column: "IsDeleted");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ForumUser_IsDeleted",
-                table: "ForumUser",
+                name: "IX_ApplicationUser_IsDeleted",
+                table: "ApplicationUser",
                 column: "IsDeleted");
 
             migrationBuilder.CreateIndex(
@@ -484,26 +484,26 @@ namespace ForumSystem.Data.Migrations
                 column: "IsDeleted");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_AspNetUserClaims_ForumUser_UserId",
+                name: "FK_AspNetUserClaims_ApplicationUser_UserId",
                 table: "AspNetUserClaims",
                 column: "UserId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_AspNetUserLogins_ForumUser_UserId",
+                name: "FK_AspNetUserLogins_ApplicationUser_UserId",
                 table: "AspNetUserLogins",
                 column: "UserId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_AspNetUserRoles_ForumUser_UserId",
+                name: "FK_AspNetUserRoles_ApplicationUser_UserId",
                 table: "AspNetUserRoles",
                 column: "UserId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
         }
@@ -511,15 +511,15 @@ namespace ForumSystem.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_AspNetUserClaims_ForumUser_UserId",
+                name: "FK_AspNetUserClaims_ApplicationUser_UserId",
                 table: "AspNetUserClaims");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_AspNetUserLogins_ForumUser_UserId",
+                name: "FK_AspNetUserLogins_ApplicationUser_UserId",
                 table: "AspNetUserLogins");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_AspNetUserRoles_ForumUser_UserId",
+                name: "FK_AspNetUserRoles_ApplicationUser_UserId",
                 table: "AspNetUserRoles");
 
             migrationBuilder.DropTable(
@@ -556,7 +556,7 @@ namespace ForumSystem.Data.Migrations
                 name: "Categories");
 
             migrationBuilder.DropTable(
-                name: "ForumUser");
+                name: "ApplicationUser");
         }
     }
 }

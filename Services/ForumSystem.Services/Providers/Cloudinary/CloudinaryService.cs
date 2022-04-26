@@ -14,6 +14,7 @@ namespace ForumSystem.Services.Providers.Cloudinary
 
         public CloudinaryService(Cloudinary cloudinary) => this.cloudinary = cloudinary;
 
+        [System.Obsolete]
         public async Task<string> UploadAsync(IFormFile file, string fileName)
         {
             byte[] destinationData;
@@ -30,7 +31,7 @@ namespace ForumSystem.Services.Providers.Cloudinary
             {
                 var uploadParams = new ImageUploadParams
                 {
-                    File = new FileDescription(fileName, ms)
+                    File = new FileDescription(fileName, ms),
                 };
 
                 uploadResult = this.cloudinary.Upload(uploadParams);
@@ -43,6 +44,8 @@ namespace ForumSystem.Services.Providers.Cloudinary
 
             var uri = version + imageFullName;
             return uri;
+
+
         }
     }
 }

@@ -58,20 +58,7 @@
                 .AddAntiforgery(options => options
                     .HeaderName = AntiforgeryHeaderName);
 
-        public static IServiceCollection AddFacebookAuthentication(
-            this IServiceCollection services,
-            IConfiguration configuration)
-        {
-            services
-                .AddAuthentication()
-                .AddFacebook(facebookOptions =>
-                {
-                    facebookOptions.AppId = configuration["Facebook:AppId"];
-                    facebookOptions.AppSecret = configuration["Facebook:AppSecret"];
-                });
 
-            return services;
-        }
 
         public static IServiceCollection AddGoogleAuthentication(
             this IServiceCollection services,
@@ -107,7 +94,7 @@
                 .AddTransient<ITagsService, TagsService>()
                 .AddTransient<IUsersService, UsersService>()
                 .AddTransient<IEmailSender>(serviceProvider =>
-                    new SendGridEmailSender(configuration["SendGrid:ApiKey"]));
+                    new SendGridEmailSender(configuration["SendGrid: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"]));
 
         public static IServiceCollection AddControllersWithAutoAntiforgeryTokenAttribute(this IServiceCollection services)
         {
@@ -122,20 +109,27 @@
         private static Cloudinary CloudinaryConfiguration(IConfiguration configuration)
         {
 
-
-            //var cloudinaryCredentials = new Account(
-            //    configuration["Cloudinary:forumsystem"],
-            //    configuration["Cloudinary:962955695447911"],
-            //    configuration["Cloudinary:jxqUHBqiOZEmcPQdpN9Bev2hrSo"]);
-
-            //return new Cloudinary(cloudinaryCredentials);
             Account account = new Account(
-  "forumsystem",
-  "962955695447911",
-  "jxqUHBqiOZEmcPQdpN9Bev2hrSo");
+   "forumsystem",
+   "962955695447911",
+   "jxqUHBqiOZEmcPQdpN9Bev2hrSo");
 
             Cloudinary cloudinary = new Cloudinary(account);
             return cloudinary;
+        }
+         public static IServiceCollection AddFacebookAuthentication(
+            this IServiceCollection services,
+            IConfiguration configuration)
+        {
+            services
+                .AddAuthentication()
+                .AddFacebook(facebookOptions =>
+                {
+                    facebookOptions.AppId = "Authentication:Facebook:AppId";
+                    facebookOptions.AppSecret = "Authentication:Facebook:AppSecret";
+                });
+
+            return services;
         }
     }
 }

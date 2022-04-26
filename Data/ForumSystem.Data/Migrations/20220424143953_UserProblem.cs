@@ -10,59 +10,59 @@ namespace ForumSystem.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_AspNetUserClaims_ForumUser_UserId",
+                name: "FK_AspNetUserClaims_ApplicationUser_UserId",
                 table: "AspNetUserClaims");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_AspNetUserLogins_ForumUser_UserId",
+                name: "FK_AspNetUserLogins_ApplicationUser_UserId",
                 table: "AspNetUserLogins");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_AspNetUserRoles_ForumUser_UserId",
+                name: "FK_AspNetUserRoles_ApplicationUser_UserId",
                 table: "AspNetUserRoles");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_Messages_ForumUser_AuthorId",
+                name: "FK_Messages_ApplicationUser_AuthorId",
                 table: "Messages");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_Messages_ForumUser_ReceiverId",
+                name: "FK_Messages_ApplicationUser_ReceiverId",
                 table: "Messages");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_PostReactions_ForumUser_AuthorId",
+                name: "FK_PostReactions_ApplicationUser_AuthorId",
                 table: "PostReactions");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_PostReports_ForumUser_AuthorId",
+                name: "FK_PostReports_ApplicationUser_AuthorId",
                 table: "PostReports");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_Posts_ForumUser_AuthorId",
+                name: "FK_Posts_ApplicationUser_AuthorId",
                 table: "Posts");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_Replies_ForumUser_AuthorId",
+                name: "FK_Replies_ApplicationUser_AuthorId",
                 table: "Replies");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_ReplyReactions_ForumUser_AuthorId",
+                name: "FK_ReplyReactions_ApplicationUser_AuthorId",
                 table: "ReplyReactions");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_ReplyReports_ForumUser_AuthorId",
+                name: "FK_ReplyReports_ApplicationUser_AuthorId",
                 table: "ReplyReports");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_UsersFollowers_ForumUser_FollowerId",
+                name: "FK_UsersFollowers_ApplicationUser_FollowerId",
                 table: "UsersFollowers");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_UsersFollowers_ForumUser_UserId",
+                name: "FK_UsersFollowers_ApplicationUser_UserId",
                 table: "UsersFollowers");
 
             migrationBuilder.DropTable(
-                name: "ForumUser");
+                name: "ApplicationUser");
 
             migrationBuilder.AddColumn<string>(
                 name: "Biography",
@@ -242,7 +242,7 @@ namespace ForumSystem.Data.Migrations
                 table: "AspNetUsers");
 
             migrationBuilder.CreateTable(
-                name: "ForumUser",
+                name: "ApplicationUser",
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -272,114 +272,114 @@ namespace ForumSystem.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ForumUser", x => x.Id);
+                    table.PrimaryKey("PK_ApplicationUser", x => x.Id);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_ForumUser_IsDeleted",
-                table: "ForumUser",
+                name: "IX_ApplicationUser_IsDeleted",
+                table: "ApplicationUser",
                 column: "IsDeleted");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_AspNetUserClaims_ForumUser_UserId",
+                name: "FK_AspNetUserClaims_ApplicationUser_UserId",
                 table: "AspNetUserClaims",
                 column: "UserId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_AspNetUserLogins_ForumUser_UserId",
+                name: "FK_AspNetUserLogins_ApplicationUser_UserId",
                 table: "AspNetUserLogins",
                 column: "UserId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_AspNetUserRoles_ForumUser_UserId",
+                name: "FK_AspNetUserRoles_ApplicationUser_UserId",
                 table: "AspNetUserRoles",
                 column: "UserId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Messages_ForumUser_AuthorId",
+                name: "FK_Messages_ApplicationUser_AuthorId",
                 table: "Messages",
                 column: "AuthorId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Messages_ForumUser_ReceiverId",
+                name: "FK_Messages_ApplicationUser_ReceiverId",
                 table: "Messages",
                 column: "ReceiverId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_PostReactions_ForumUser_AuthorId",
+                name: "FK_PostReactions_ApplicationUser_AuthorId",
                 table: "PostReactions",
                 column: "AuthorId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_PostReports_ForumUser_AuthorId",
+                name: "FK_PostReports_ApplicationUser_AuthorId",
                 table: "PostReports",
                 column: "AuthorId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Posts_ForumUser_AuthorId",
+                name: "FK_Posts_ApplicationUser_AuthorId",
                 table: "Posts",
                 column: "AuthorId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Replies_ForumUser_AuthorId",
+                name: "FK_Replies_ApplicationUser_AuthorId",
                 table: "Replies",
                 column: "AuthorId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_ReplyReactions_ForumUser_AuthorId",
+                name: "FK_ReplyReactions_ApplicationUser_AuthorId",
                 table: "ReplyReactions",
                 column: "AuthorId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_ReplyReports_ForumUser_AuthorId",
+                name: "FK_ReplyReports_ApplicationUser_AuthorId",
                 table: "ReplyReports",
                 column: "AuthorId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_UsersFollowers_ForumUser_FollowerId",
+                name: "FK_UsersFollowers_ApplicationUser_FollowerId",
                 table: "UsersFollowers",
                 column: "FollowerId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_UsersFollowers_ForumUser_UserId",
+                name: "FK_UsersFollowers_ApplicationUser_UserId",
                 table: "UsersFollowers",
                 column: "UserId",
-                principalTable: "ForumUser",
+                principalTable: "ApplicationUser",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
         }

@@ -176,7 +176,7 @@ namespace ForumSystem.Data.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("ForumSystem.Data.Models.ForumUser", b =>
+            modelBuilder.Entity("ForumSystem.Data.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -256,7 +256,7 @@ namespace ForumSystem.Data.Migrations
 
                     b.HasIndex("IsDeleted");
 
-                    b.ToTable("ForumUser");
+                    b.ToTable("ApplicationUser");
                 });
 
             modelBuilder.Entity("ForumSystem.Data.Models.Message", b =>
@@ -777,13 +777,13 @@ namespace ForumSystem.Data.Migrations
 
             modelBuilder.Entity("ForumSystem.Data.Models.Message", b =>
                 {
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", "Author")
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", "Author")
                         .WithMany("SentMessages")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", "Receiver")
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", "Receiver")
                         .WithMany("ReceivedMessages")
                         .HasForeignKey("ReceiverId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -796,7 +796,7 @@ namespace ForumSystem.Data.Migrations
 
             modelBuilder.Entity("ForumSystem.Data.Models.Post", b =>
                 {
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", "Author")
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", "Author")
                         .WithMany("Posts")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -815,7 +815,7 @@ namespace ForumSystem.Data.Migrations
 
             modelBuilder.Entity("ForumSystem.Data.Models.PostReaction", b =>
                 {
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", "Author")
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", "Author")
                         .WithMany("PostReactions")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -834,7 +834,7 @@ namespace ForumSystem.Data.Migrations
 
             modelBuilder.Entity("ForumSystem.Data.Models.PostReport", b =>
                 {
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", "Author")
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", "Author")
                         .WithMany("PostReports")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -872,7 +872,7 @@ namespace ForumSystem.Data.Migrations
 
             modelBuilder.Entity("ForumSystem.Data.Models.Reply", b =>
                 {
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", "Author")
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", "Author")
                         .WithMany("Replies")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -898,7 +898,7 @@ namespace ForumSystem.Data.Migrations
 
             modelBuilder.Entity("ForumSystem.Data.Models.ReplyReaction", b =>
                 {
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", "Author")
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", "Author")
                         .WithMany("ReplyReactions")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -917,7 +917,7 @@ namespace ForumSystem.Data.Migrations
 
             modelBuilder.Entity("ForumSystem.Data.Models.ReplyReport", b =>
                 {
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", "Author")
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", "Author")
                         .WithMany("ReplyReports")
                         .HasForeignKey("AuthorId");
 
@@ -934,13 +934,13 @@ namespace ForumSystem.Data.Migrations
 
             modelBuilder.Entity("ForumSystem.Data.Models.UserFollower", b =>
                 {
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", "Follower")
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", "Follower")
                         .WithMany()
                         .HasForeignKey("FollowerId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", "User")
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", "User")
                         .WithMany("Followers")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -968,7 +968,7 @@ namespace ForumSystem.Data.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", null)
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", null)
                         .WithMany("Claims")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -983,7 +983,7 @@ namespace ForumSystem.Data.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", null)
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", null)
                         .WithMany("Logins")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -1004,7 +1004,7 @@ namespace ForumSystem.Data.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("ForumSystem.Data.Models.ForumUser", null)
+                    b.HasOne("ForumSystem.Data.Models.ApplicationUser", null)
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -1034,7 +1034,7 @@ namespace ForumSystem.Data.Migrations
                     b.Navigation("Posts");
                 });
 
-            modelBuilder.Entity("ForumSystem.Data.Models.ForumUser", b =>
+            modelBuilder.Entity("ForumSystem.Data.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Claims");
 

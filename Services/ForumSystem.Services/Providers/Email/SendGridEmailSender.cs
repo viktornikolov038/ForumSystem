@@ -12,7 +12,7 @@ namespace ForumSystem.Services.Providers.Email
     {
         private readonly SendGridClient client;
 
-        public SendGridEmailSender(string apiKey) => this.client = new SendGridClient(apiKey);
+        public SendGridEmailSender(string apiKey) => this.client = new SendGridClient("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");
 
         public async Task SendEmailAsync(
             string from,

@@ -14,6 +14,6 @@ namespace ForumSystem.Data.Models.Enums
         GgagagaahahahhaahHaha = 3,
         Wow = 4,
         Mad = 5,
-        Rage = 6
+        Rage = 6,
     }
 }

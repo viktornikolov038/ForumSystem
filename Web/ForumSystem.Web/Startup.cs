@@ -24,7 +24,7 @@
                 .AddResponseCompressionForHttps()
                 .AddAntiforgeryHeader()
                 .AddFacebookAuthentication(this.configuration)
-                .AddGoogleAuthentication(this.configuration)
+                //.AddGoogleAuthentication(this.configuration)
                 .AddAutoMapper(typeof(ForumProfile).Assembly)
                 .AddApplicationServices(this.configuration)
                 .AddControllersWithAutoAntiforgeryTokenAttribute()
