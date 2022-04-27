@@ -1,9 +1,11 @@
-﻿using ForumSystem.Services.Posts;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Areas.Administration.Controllers
+﻿namespace ForumSystem.Web.Areas.Administration.Controllers
 {
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Mvc;
+
+    using Services.Posts;
+
     public class PostsController : AdminController
     {
         private readonly IPostsService postsService;

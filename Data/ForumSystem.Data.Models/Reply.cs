@@ -1,9 +1,11 @@
-﻿using ForumSystem.Data.Common.Models;
-using System;
-using System.Collections.Generic;
-
-namespace ForumSystem.Data.Models
+﻿namespace ForumSystem.Data.Models
 {
+    using System;
+    using System.Collections.Generic;
+   
+    using Common;
+    using ForumSystem.Data.Common.Models;
+
     public class Reply : IAuditInfo, IDeletableEntity
     {
         public int Id { get; set; }

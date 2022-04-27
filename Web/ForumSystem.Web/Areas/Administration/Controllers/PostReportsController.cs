@@ -1,15 +1,17 @@
-﻿using ForumSystem.Services.Reports;
-using ForumSystem.Web.ViewModels.PostReports;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Areas.Administration.Controllers
+﻿namespace ForumSystem.Web.Areas.Administration.Controllers
 {
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Mvc;
+
+    using Services.Reports;
+    using ViewModels.PostReports;
+
     public class PostReportsController : AdminController
     {
         private readonly IPostReportsService postReportsService;
 
-        public PostReportsController(IPostReportsService postReportsService)
+        public PostReportsController(IPostReportsService postReportsService) 
             => this.postReportsService = postReportsService;
 
         public async Task<IActionResult> All()

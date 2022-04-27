@@ -1,15 +1,17 @@
-﻿using ForumSystem.Common;
-using ForumSystem.Services.Messages;
-using ForumSystem.Services.Providers.DateTime;
-using ForumSystem.Services.Users;
-using ForumSystem.Web.Infrastructure.Extensions;
-using ForumSystem.Web.ViewModels.Chat;
-using Microsoft.AspNetCore.SignalR;
-using System.Globalization;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Hubs
+﻿namespace ForumSystem.Web.Hubs
 {
+    using System.Globalization;
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.SignalR;
+
+    using Common;
+    using Infrastructure.Extensions;
+    using Services.Messages;
+    using Services.Providers.DateTime;
+    using Services.Users;
+    using ViewModels.Chat;
+
     public class ChatHub : Hub
     {
         private readonly IUsersService usersService;
@@ -26,7 +28,7 @@ namespace ForumSystem.Web.Hubs
             this.dateTimeProvider = dateTimeProvider;
         }
 
-        public async Task WhoIsTyping(string name)
+        public async Task WhoIsTyping(string name) 
             => await this.Clients.Others.SendAsync("SayWhoIsTyping", name);
 
         public async Task SendMessage(string message, string receiverId)

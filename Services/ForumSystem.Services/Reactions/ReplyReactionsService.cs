@@ -1,16 +1,15 @@
-﻿using ForumSystem.Data;
-using ForumSystem.Data.Models;
-using ForumSystem.Data.Models.Enums;
-using ForumSystem.Services.Providers.DateTime;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Reactions
+﻿namespace ForumSystem.Services.Reactions
 {
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using Microsoft.EntityFrameworkCore;
+
+    using Data;
+    using Data.Models;
+    using Data.Models.Enums;
+    using Providers.DateTime;
+
     public class ReplyReactionsService : IReplyReactionsService
     {
         private readonly ApplicationDbContext db;
@@ -42,8 +41,8 @@ namespace ForumSystem.Services.Reactions
             else
             {
                 replyReaction.ModifiedOn = this.dateTimeProvider.Now();
-                replyReaction.ReactionType = replyReaction.ReactionType == reactionType
-                    ? ReactionType.Neutral
+                replyReaction.ReactionType = replyReaction.ReactionType == reactionType 
+                    ? ReactionType.Neutral 
                     : reactionType;
             }
 
@@ -52,23 +51,23 @@ namespace ForumSystem.Services.Reactions
             return await this.GetCountByReplyIdAsync(replyId);
         }
 
-        public async Task<int> GetTotalCountAsync()
+        public async Task<int> GetTotalCountAsync() 
             => await this.db.ReplyReactions
                 .Where(pr => !pr.Reply.IsDeleted)
                 .CountAsync();
 
-        private async Task<ReactionsCountServiceModel> GetCountByReplyIdAsync(int replyId)
+        private async Task<ReactionsCountServiceModel> GetCountByReplyIdAsync(int replyId) 
             => new ReactionsCountServiceModel
             {
                 Likes = await this.GetCountByTypeAndReplyIdAsync(ReactionType.Like, replyId),
                 Loves = await this.GetCountByTypeAndReplyIdAsync(ReactionType.Love, replyId),
-                HahaCount = await this.GetCountByTypeAndReplyIdAsync(ReactionType.GgagagaahahahhaahHaha, replyId),
+                HahaCount = await this.GetCountByTypeAndReplyIdAsync(ReactionType.Haha, replyId),
                 WowCount = await this.GetCountByTypeAndReplyIdAsync(ReactionType.Wow, replyId),
-                SadCount = await this.GetCountByTypeAndReplyIdAsync(ReactionType.Mad, replyId),
-                AngryCount = await this.GetCountByTypeAndReplyIdAsync(ReactionType.Rage, replyId)
+                SadCount = await this.GetCountByTypeAndReplyIdAsync(ReactionType.Sad, replyId),
+                AngryCount = await this.GetCountByTypeAndReplyIdAsync(ReactionType.Angry, replyId)
             };
 
-        private async Task<int> GetCountByTypeAndReplyIdAsync(ReactionType reactionType, int replyId)
+        private async Task<int> GetCountByTypeAndReplyIdAsync(ReactionType reactionType, int replyId) 
             => await this.db.ReplyReactions
                 .Where(pr => !pr.Reply.IsDeleted && pr.ReplyId == replyId)
                 .CountAsync(pr => pr.ReactionType == reactionType);

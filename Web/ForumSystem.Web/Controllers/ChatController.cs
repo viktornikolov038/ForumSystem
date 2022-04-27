@@ -1,14 +1,16 @@
-﻿using ForumSystem.Services.Messages;
-using ForumSystem.Services.Users;
-using ForumSystem.Web.Infrastructure.Extensions;
-using ForumSystem.Web.InputModels.Chat;
-using ForumSystem.Web.ViewModels.Chat;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Controllers
+﻿namespace ForumSystem.Web.Controllers
 {
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc;
+
+    using Infrastructure.Extensions;
+    using InputModels.Chat;
+    using Services.Messages;
+    using Services.Users;
+    using ViewModels.Chat;
+
     [Authorize]
     public class ChatController : Controller
     {

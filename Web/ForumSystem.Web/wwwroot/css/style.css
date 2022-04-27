@@ -22,7 +22,7 @@ ul.pagination {
         }
 
             ul.pagination li a.active {
-                background-color: orangered;
+                background-color: #2e3192;
                 color: white;
                 border-radius: 5px;
             }
@@ -62,7 +62,7 @@ body {
     line-height: 1.5;
     color: #666f74;
     text-align: left;
-    background-color: palevioletred;
+    background-color: #f8f9fb;
 }
 
 [tabindex="-1"]:focus {

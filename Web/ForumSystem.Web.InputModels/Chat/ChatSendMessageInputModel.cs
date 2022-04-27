@@ -1,13 +1,17 @@
-﻿using ForumSystem.Common;
-using ForumSystem.Web.ViewModels.Chat;
-using System.ComponentModel.DataAnnotations;
-
-namespace ForumSystem.Web.InputModels.Chat
+﻿namespace ForumSystem.Web.InputModels.Chat
 {
+    using ForumSystem.Web.ViewModels.Chat;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
+    using ViewModels.Chat;
+
+    using static Common.GlobalConstants;
+
     public class ChatSendMessageInputModel
     {
         [Required]
-        [MaxLength(GlobalConstants.MessageContentMaxLength)]
+        [MaxLength(MessageContentMaxLength)]
         public string Message { get; set; }
 
         [Required]

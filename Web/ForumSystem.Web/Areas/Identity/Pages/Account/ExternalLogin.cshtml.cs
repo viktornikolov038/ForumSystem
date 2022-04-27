@@ -165,7 +165,7 @@
                     Email = Input.Email,
                     BirthDate = Input.BirthDate,
                     ProfilePicture = profilePicture,
-                    Gender = GenderType.Nonbinary,
+                    Gender = GenderType.NotKnown,
                     CreatedOn = this.dateTimeProvider.Now()
                 };
 

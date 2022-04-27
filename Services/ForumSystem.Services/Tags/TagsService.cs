@@ -1,17 +1,17 @@
-﻿using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using ForumSystem.Data;
-using ForumSystem.Data.Models;
-using ForumSystem.Services.Providers.DateTime;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Tags
+﻿namespace ForumSystem.Services.Tags
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using AutoMapper;
+    using AutoMapper.QueryableExtensions;
+    using Microsoft.EntityFrameworkCore;
+
+    using Data;
+    using Data.Models;
+    using Providers.DateTime;
+
     public class TagsService : ITagsService
     {
         private readonly ApplicationDbContext db;
@@ -47,10 +47,10 @@ namespace ForumSystem.Services.Tags
             await this.db.SaveChangesAsync();
         }
 
-        public async Task<bool> IsExistingAsync(int id)
+        public async Task<bool> IsExistingAsync(int id) 
             => await this.db.Tags.AnyAsync(t => t.Id == id && !t.IsDeleted);
 
-        public async Task<bool> IsExistingAsync(string name)
+        public async Task<bool> IsExistingAsync(string name) 
             => await this.db.Tags.AnyAsync(t => t.Name == name && !t.IsDeleted);
 
         public async Task<bool> AreExistingAsync(IEnumerable<int> ids)
@@ -115,7 +115,7 @@ namespace ForumSystem.Services.Tags
             return tags;
         }
 
-        public async Task<IEnumerable<TModel>> GetAllByPostIdAsync<TModel>(int postId)
+        public async Task<IEnumerable<TModel>> GetAllByPostIdAsync<TModel>(int postId) 
             => await this.db.PostsTags
                 .AsNoTracking()
                 .Where(pt => pt.PostId == postId && !pt.Post.IsDeleted)

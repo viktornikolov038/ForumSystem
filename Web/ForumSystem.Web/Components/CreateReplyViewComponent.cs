@@ -1,8 +1,9 @@
-﻿using ForumSystem.Web.InputModels.Replies;
-using Microsoft.AspNetCore.Mvc;
-
-namespace ForumSystem.Web.Components
+﻿namespace ForumSystem.Web.Components
 {
+    using Microsoft.AspNetCore.Mvc;
+
+    using InputModels.Replies;
+
     [ViewComponent(Name = "CreateReply")]
     public class CreateReplyViewComponent : ViewComponent
     {

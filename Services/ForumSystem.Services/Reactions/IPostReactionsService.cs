@@ -1,12 +1,9 @@
-﻿using ForumSystem.Data.Models.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Reactions
+﻿namespace ForumSystem.Services.Reactions
 {
+    using System.Threading.Tasks;
+
+    using Data.Models.Enums;
+
     public interface IPostReactionsService
     {
         Task<ReactionsCountServiceModel> ReactAsync(ReactionType reactionType, int postId, string authorId);

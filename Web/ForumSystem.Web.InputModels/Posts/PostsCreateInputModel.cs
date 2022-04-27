@@ -1,38 +1,37 @@
-﻿using ForumSystem.Common;
-using ForumSystem.Data.Models.Enums;
-using ForumSystem.Web.Infrastructure.Attributes;
-using ForumSystem.Web.ViewModels.Posts;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.InputModels.Posts
+﻿namespace ForumSystem.Web.InputModels.Posts
 {
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
+    using Data.Models.Enums;
+    using Infrastructure.Attributes;
+    using ViewModels.Posts;
+
+    using static Common.ErrorMessages;
+    using static Common.GlobalConstants;
+
     public class PostsCreateInputModel
     {
         [Required]
-        [StringLength(GlobalConstants.PostTitleMaxLength, ErrorMessage = ErrorMessages.PostTitleLengthErrorMessage, MinimumLength = GlobalConstants.PostTitleMinLength)]
+        [StringLength(PostTitleMaxLength, ErrorMessage = PostTitleLengthErrorMessage, MinimumLength = PostTitleMinLength)]
         public string Title { get; set; }
 
         [Required]
         [EnumDataType(typeof(PostType))]
-        [Display(Name = GlobalConstants.PostTypeDisplayName)]
+        [Display(Name = PostTypeDisplayName)]
         public PostType PostType { get; set; }
 
         [Required]
-        [MaxLength(GlobalConstants.PostDescriptionMaxLength)]
+        [MaxLength(PostDescriptionMaxLength)]
         [DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
         [Required]
-        [EnsureCategoryIdExists(ErrorMessage = ErrorMessages.CategoryNonExistingIdErrorMessage)]
+        [EnsureCategoryIdExists(ErrorMessage = CategoryNonExistingIdErrorMessage)]
         public int CategoryId { get; set; }
 
-        [EnsureTagIdsExists(ErrorMessage = ErrorMessages.TagNonExistingIdErrorMessage)]
-        [Display(Name = GlobalConstants.TagsDisplayName)]
+        [EnsureTagIdsExists(ErrorMessage = TagNonExistingIdErrorMessage)]
+        [Display(Name = TagsDisplayName)]
         public IEnumerable<int> TagIds { get; set; }
 
         public IEnumerable<PostsCategoryDetailsViewModel> Categories { get; set; }

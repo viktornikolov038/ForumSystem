@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Messages
+﻿namespace ForumSystem.Services.Messages
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+
     public interface IMessagesService
     {
         Task CreateAsync(string content, string authorId, string receiverId);

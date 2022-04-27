@@ -1,12 +1,10 @@
-﻿using ForumSystem.Data.Models.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Posts
+﻿namespace ForumSystem.Services.Posts
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+
+    using Data.Models.Enums;
+
     public interface IPostsService
     {
         Task<int> CreateAsync(string title, PostType type, string description, string authorId, int categoryId, IEnumerable<int> tagIds);

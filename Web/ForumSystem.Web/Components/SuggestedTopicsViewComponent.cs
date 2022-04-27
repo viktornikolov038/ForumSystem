@@ -1,11 +1,12 @@
-﻿using ForumSystem.Services.Posts;
-using ForumSystem.Services.Tags;
-using ForumSystem.Web.ViewModels.Posts;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Components
+﻿namespace ForumSystem.Web.Components
 {
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Mvc;
+
+    using Services.Posts;
+    using Services.Tags;
+    using ViewModels.Posts;
 
     [ViewComponent(Name = "SuggestedTopics")]
     public class SuggestedTopicsViewComponent : ViewComponent

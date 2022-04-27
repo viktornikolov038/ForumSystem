@@ -4,18 +4,17 @@
     using System.ComponentModel.DataAnnotations;
     using System.Threading.Tasks;
 
+    using ForumSystem.Data.Models;
+    using ForumSystem.Data.Models.Enums;
+    using ForumSystem.Services.Providers.Cloudinary;
+    using ForumSystem.Web.Infrastructure.Attributes;
+    using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
 
-    using Data.Models;
-    using Data.Models.Enums;
-    using Infrastructure.Attributes;
-    using Microsoft.AspNetCore.Http;
-    using Services.Providers.Cloudinary;
-
-    using static Common.ErrorMessages;
-    using static Common.GlobalConstants;
+    using static ForumSystem.Common.ErrorMessages;
+    using static ForumSystem.Common.GlobalConstants;
 
     public partial class IndexModel : PageModel
     {

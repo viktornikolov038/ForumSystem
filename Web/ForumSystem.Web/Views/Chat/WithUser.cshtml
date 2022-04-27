@@ -107,6 +107,7 @@
 @section Scripts {
     <script>
         $('#messagesList')[0].scrollTop = $('#messagesList')[0].scrollHeight;
+
         $('#messageInput').on('keypress',
             function(e) {
                 if (e.which === 13 && !e.shiftKey) {
@@ -114,6 +115,7 @@
                     $('#sendButton').click();
                 }
             });
+
         $("#messageInput").on('change keyup copy paste cut',
             function() {
                 if (!this.value) {
@@ -122,9 +124,11 @@
                     connection.invoke("WhoIsTyping", '@this.User.Identity.Name');
                 }
             });
+
         var connection = new signalR.HubConnectionBuilder()
             .withUrl("/chat")
             .build();
+
         connection.on("SayWhoIsTyping",
             function(name) {
                 if (name === null || name === "") {
@@ -134,8 +138,10 @@
                     $("#whoIsTyping").html(whoIsTypingInfo);
                 }
             });
+
         connection.on("ReceiveMessage",
             function(message) {
+
                 var chatInfo;
                 if (message.authorProfilePicture.indexOf('#icon-ava') >= 0) {
                     chatInfo = `<div class="tt-item">
@@ -172,17 +178,21 @@
                                     </div>
                                 </div>`}`;
                 }
+
                 $("#messagesList").append(chatInfo);
                 $('#messagesList')[0].scrollTop = $('#messagesList')[0].scrollHeight;
             });
+
         $("#sendButton").click(function() {
             var message = $.trim($('#messageInput').val());
             $('#messageInput').val('');
             connection.invoke("SendMessage", escapeHtml(message), '@Model.User.Id');
         });
+
         connection.start().catch(function(err) {
             return console.error(err.toString());
         });
+
         function escapeHtml(unsafe) {
             return unsafe
                 .replace(':)', "🙂")

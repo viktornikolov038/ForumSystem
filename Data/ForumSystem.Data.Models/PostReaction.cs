@@ -1,9 +1,11 @@
-﻿using ForumSystem.Data.Common.Models;
-using ForumSystem.Data.Models.Enums;
-using System;
-
-namespace ForumSystem.Data.Models
+﻿namespace ForumSystem.Data.Models
 {
+    using System;
+
+    using Common;
+    using Enums;
+    using ForumSystem.Data.Common.Models;
+
     public class PostReaction : IAuditInfo
     {
         public int Id { get; set; }

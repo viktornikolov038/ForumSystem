@@ -1,8 +1,9 @@
-﻿using ForumSystem.Data.Common.Models;
-using System;
-
-namespace ForumSystem.Data.Models
+﻿namespace ForumSystem.Data.Models
 {
+    using Common;
+    using ForumSystem.Data.Common.Models;
+    using System;
+
     public class Message : IAuditInfo, IDeletableEntity
     {
         public int Id { get; set; }

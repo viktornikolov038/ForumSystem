@@ -1,15 +1,13 @@
-﻿using ForumSystem.Common;
-using ForumSystem.Services.Tags;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Infrastructure.Attributes
+﻿namespace ForumSystem.Web.Infrastructure.Attributes
 {
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
+    using Microsoft.Extensions.DependencyInjection;
+
+    using Common;
+    using ForumSystem.Services.Tags;
+
     public class EnsureTagIdsExistsAttribute : ValidationAttribute
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)

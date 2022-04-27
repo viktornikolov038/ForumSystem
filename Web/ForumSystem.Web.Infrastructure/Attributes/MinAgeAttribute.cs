@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Infrastructure.Attributes
+﻿namespace ForumSystem.Web.Infrastructure.Attributes
 {
+    using System;
+    using System.ComponentModel.DataAnnotations;
+
     public class MinAgeAttribute : ValidationAttribute
     {
         private readonly int minAge;

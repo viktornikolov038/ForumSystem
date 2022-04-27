@@ -1,9 +1,5 @@
 ﻿@page
-@using ForumSystem.Web.Areas.Identity.Pages.Account.Manage
 @using ForumSystem.Data.Models.Enums
-@using ForumSystem.Web.Areas.Identity
-@using ForumSystem.Data.Models
-@using Microsoft.AspNetCore.Identity
 @inject UserManager<ApplicationUser> UserManager
 @model IndexModel
 @{
@@ -68,7 +64,7 @@
                 <label asp-for="Input.Gender"></label>
                 <select class="form-control" asp-for="Input.Gender">
                     <option disabled selected>Please select...</option>
-                    <option value="@GenderType.Nonbinary">Nonbinary</option>
+                    <option value="@GenderType.NotKnown">Not known</option>
                     <option value="@GenderType.Male">Male</option>
                     <option value="@GenderType.Female">Female</option>
                 </select>

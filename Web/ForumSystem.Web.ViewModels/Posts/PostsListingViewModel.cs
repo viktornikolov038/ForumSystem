@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.ViewModels.Posts
+﻿namespace ForumSystem.Web.ViewModels.Posts
 {
+    using System.Collections.Generic;
+
     public class PostsListingViewModel
     {
         public int Id { get; set; }

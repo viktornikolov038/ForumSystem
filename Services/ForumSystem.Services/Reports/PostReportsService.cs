@@ -1,17 +1,17 @@
-﻿using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using ForumSystem.Data;
-using ForumSystem.Data.Models;
-using ForumSystem.Services.Providers.DateTime;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Reports
+﻿namespace ForumSystem.Services.Reports
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using AutoMapper;
+    using AutoMapper.QueryableExtensions;
+    using Microsoft.EntityFrameworkCore;
+
+    using Data;
+    using Data.Models;
+    using Providers.DateTime;
+
     public class PostReportsService : IPostReportsService
     {
         private readonly ApplicationDbContext db;
@@ -55,14 +55,14 @@ namespace ForumSystem.Services.Reports
             return true;
         }
 
-        public async Task<TModel> GetByIdAsync<TModel>(int id)
+        public async Task<TModel> GetByIdAsync<TModel>(int id) 
             => await this.db.PostReports
                 .AsNoTracking()
                 .Where(pr => pr.Id == id && !pr.IsDeleted)
                 .ProjectTo<TModel>(this.mapper.ConfigurationProvider)
                 .FirstOrDefaultAsync();
 
-        public async Task<IEnumerable<TModel>> GetAllAsync<TModel>()
+        public async Task<IEnumerable<TModel>> GetAllAsync<TModel>() 
             => await this.db.PostReports
                 .AsNoTracking()
                 .Where(pr => !pr.IsDeleted && !pr.Post.IsDeleted)

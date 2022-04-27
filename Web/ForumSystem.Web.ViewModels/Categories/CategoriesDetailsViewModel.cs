@@ -1,12 +1,9 @@
-﻿using ForumSystem.Web.ViewModels.Posts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.ViewModels.Categories
+﻿namespace ForumSystem.Web.ViewModels.Categories
 {
+    using System.Collections.Generic;
+
+    using Posts;
+
     public class CategoriesDetailsViewModel
     {
         public string Search { get; set; }

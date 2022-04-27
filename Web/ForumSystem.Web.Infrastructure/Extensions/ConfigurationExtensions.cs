@@ -1,12 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Infrastructure.Extensions
+﻿namespace ForumSystem.Web.Infrastructure.Extensions
 {
+    using Microsoft.Extensions.Configuration;
+
     public static class ConfigurationExtensions
     {
         public static string GetDefaultConnectionString(this IConfiguration configuration)

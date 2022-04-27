@@ -1,14 +1,16 @@
-﻿using ForumSystem.Services.Categories;
-using ForumSystem.Services.Posts;
-using ForumSystem.Services.Tags;
-using ForumSystem.Web.ViewModels.Categories;
-using ForumSystem.Web.ViewModels.Posts;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Controllers
+﻿namespace ForumSystem.Web.Controllers
 {
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc;
+
+    using Services.Categories;
+    using Services.Posts;
+    using Services.Tags;
+    using ViewModels.Categories;
+    using ViewModels.Posts;
+
     public class CategoriesController : Controller
     {
         private readonly ICategoriesService categoriesService;

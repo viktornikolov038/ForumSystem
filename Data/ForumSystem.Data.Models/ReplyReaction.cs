@@ -2,8 +2,9 @@
 {
     using System;
 
+    using Common;
+    using Enums;
     using ForumSystem.Data.Common.Models;
-    using ForumSystem.Data.Models.Enums;
 
     public class ReplyReaction : IAuditInfo
     {

@@ -1,16 +1,11 @@
-﻿using ForumSystem.Data;
-using ForumSystem.Data.Seeding;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Infrastructure.Extensions
+﻿namespace ForumSystem.Web.Infrastructure.Extensions
 {
+    using ForumSystem.Data;
+    using ForumSystem.Data.Seeding;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.DependencyInjection;
+
     public static class ApplicationBuilderExtensions
     {
         public static IApplicationBuilder ApplyMigrations(this IApplicationBuilder app)

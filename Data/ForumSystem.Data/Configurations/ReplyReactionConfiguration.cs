@@ -1,14 +1,10 @@
-﻿using ForumSystem.Data.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Data.Configurations
+﻿namespace ForumSystem.Data.Configurations
 {
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+    using Models;
+
     public class ReplyReactionConfiguration : IEntityTypeConfiguration<ReplyReaction>
     {
         public void Configure(EntityTypeBuilder<ReplyReaction> replyReaction)

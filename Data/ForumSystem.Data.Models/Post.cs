@@ -1,10 +1,12 @@
-﻿using ForumSystem.Data.Common.Models;
-using ForumSystem.Data.Models.Enums;
-using System;
-using System.Collections.Generic;
-
-namespace ForumSystem.Data.Models
+﻿namespace ForumSystem.Data.Models
 {
+    using System;
+    using System.Collections.Generic;
+   
+    using Common;
+    using Enums;
+    using ForumSystem.Data.Common.Models;
+
     public class Post : IAuditInfo, IDeletableEntity
     {
         public int Id { get; set; }

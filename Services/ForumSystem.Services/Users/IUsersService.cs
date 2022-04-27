@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Users
+﻿namespace ForumSystem.Services.Users
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+
     public interface IUsersService
     {
         Task ModifyAsync(string id);

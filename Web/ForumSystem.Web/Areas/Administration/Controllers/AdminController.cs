@@ -1,10 +1,9 @@
 ﻿namespace ForumSystem.Web.Areas.Administration.Controllers
 {
-    using ForumSystem.Common;
-    using ForumSystem.Web.Controllers;
-
-    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Authorization;
+
+    using Common;
 
     [Authorize(Roles = GlobalConstants.AdministratorRoleName)]
     [Area(GlobalConstants.AdministratorAreaName)]

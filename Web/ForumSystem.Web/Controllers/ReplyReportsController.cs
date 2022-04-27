@@ -1,13 +1,14 @@
-﻿using ForumSystem.Services.Replies;
-using ForumSystem.Services.Reports;
-using ForumSystem.Web.Infrastructure.Extensions;
-using ForumSystem.Web.InputModels.ReplyReports;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Controllers
+﻿namespace ForumSystem.Web.Controllers
 {
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc;
+
+    using Infrastructure.Extensions;
+    using InputModels.ReplyReports;
+    using Services.Replies;
+    using Services.Reports;
 
     [Authorize]
     public class ReplyReportsController : Controller

@@ -18,7 +18,7 @@ namespace ForumSystem.Data.Models
             this.Logins = new HashSet<IdentityUserLogin<string>>();
         }
 
-        public GenderType Gender { get; set; }
+         public GenderType Gender { get; set; }
 
         public DateTime BirthDate { get; set; }
 

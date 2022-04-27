@@ -1,16 +1,18 @@
-﻿using ForumSystem.Services.Users;
-using ForumSystem.Web.ViewModels.Users;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Components
+﻿namespace ForumSystem.Web.Components
 {
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Mvc;
+
+    using Services.Users;
+    using ViewModels.Users;
+
     [ViewComponent(Name = "UsersDetails")]
     public class UsersDetailsViewComponent : ViewComponent
     {
         private readonly IUsersService usersService;
 
-        public UsersDetailsViewComponent(IUsersService usersService)
+        public UsersDetailsViewComponent(IUsersService usersService) 
             => this.usersService = usersService;
 
         public async Task<IViewComponentResult> InvokeAsync(string userId)

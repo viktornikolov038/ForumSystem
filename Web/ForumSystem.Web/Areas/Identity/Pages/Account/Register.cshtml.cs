@@ -18,12 +18,12 @@
     using Data.Models;
     using Data.Models.Enums;
     using Infrastructure.Attributes;
-    using Services.Providers.DateTime;
-    using Services.Providers.Email;
     using Services.Users;
 
     using static Common.ErrorMessages;
     using static Common.GlobalConstants;
+    using ForumSystem.Services.Providers.DateTime;
+    using ForumSystem.Services.Providers.Email;
 
     [AllowAnonymous]
     public class RegisterModel : PageModel
@@ -111,7 +111,7 @@
                     Email = Input.Email,
                     BirthDate = Input.BirthDate,
                     ProfilePicture = profilePicture,
-                    Gender = GenderType.Nonbinary,
+                    Gender = GenderType.NotKnown,
                     CreatedOn = this.dateTimeProvider.Now()
                 };
 

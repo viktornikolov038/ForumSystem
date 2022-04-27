@@ -1,12 +1,9 @@
-﻿using ForumSystem.Web.ViewModels.Posts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.ViewModels.Tags
+﻿namespace ForumSystem.Web.ViewModels.Tags
 {
+    using System.Collections.Generic;
+
+    using Posts;
+
     public class TagsDetailsViewModel
     {
         public string Search { get; set; }

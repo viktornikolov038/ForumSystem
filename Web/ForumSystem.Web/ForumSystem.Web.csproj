@@ -9,26 +9,16 @@
   <PropertyGroup>
     <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
-
-  <ItemGroup>
-    <_WebToolingArtifacts Remove="Properties\serviceDependencies.ForumSystem - Web Deploy1.json" />
-    <_WebToolingArtifacts Remove="Properties\serviceDependencies.json" />
-  </ItemGroup>
   <ItemGroup>
     <AdditionalFiles Include="..\..\stylecop.json" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\serviceDependencies.ForumSystem - Web Deploy1.json" />
-    <Content Include="Properties\serviceDependencies.json" />
+    <None Include="..\..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Cloudinary" Version="0.0.5" />
     <PackageReference Include="CloudinaryDotNet" Version="1.17.0" />
-    <PackageReference Include="Microsoft.Azure.SignalR" Version="1.17.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.4">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.4" />
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
@@ -42,18 +32,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\ForumSystem.Common\ForumSystem.Common.csproj" />
-   
+    <ProjectReference Include="..\..\Data\ForumSystem.Data.Models\ForumSystem.Data.Models.csproj" />
     <ProjectReference Include="..\..\Data\ForumSystem.Data\ForumSystem.Data.csproj" />
-    <ProjectReference Include="..\..\ForumSystem.Web.InputModels\ForumSystem.Web.InputModels.csproj" />
     <ProjectReference Include="..\..\Services\ForumSystem.Services.Data\ForumSystem.Services.Data.csproj" />
     <ProjectReference Include="..\..\Services\ForumSystem.Services.Mapping\ForumSystem.Services.Mapping.csproj" />
     <ProjectReference Include="..\..\Services\ForumSystem.Services.Messaging\ForumSystem.Services.Messaging.csproj" />
     <ProjectReference Include="..\..\Services\ForumSystem.Services\ForumSystem.Services.csproj" />
-    
+    <ProjectReference Include="..\ForumSystem.Web.Infrastructure\ForumSystem.Web.Infrastructure.csproj" />
+    <ProjectReference Include="..\ForumSystem.Web.InputModels\ForumSystem.Web.InputModels.csproj" />
     <ProjectReference Include="..\ForumSystem.Web.ViewModels\ForumSystem.Web.ViewModels.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Areas\Identity\Pages\Account\" />
   </ItemGroup>
 </Project>

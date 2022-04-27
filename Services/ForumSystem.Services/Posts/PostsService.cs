@@ -1,19 +1,20 @@
-﻿using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using ForumSystem.Data;
-using ForumSystem.Data.Models;
-using ForumSystem.Data.Models.Enums;
-using ForumSystem.Services.Providers.DateTime;
-using ForumSystem.Services.Users;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Posts
+﻿namespace ForumSystem.Services.Posts
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using AutoMapper;
+    using AutoMapper.QueryableExtensions;
+    using Microsoft.EntityFrameworkCore;
+
+    using Data;
+    using Data.Models;
+    using Data.Models.Enums;
+    using Providers.DateTime;
+    using Users;
+
     public class PostsService : IPostsService
     {
         private readonly ApplicationDbContext db;
@@ -34,11 +35,11 @@ namespace ForumSystem.Services.Posts
         }
 
         public async Task<int> CreateAsync(
-            string title,
-            PostType type,
-            string description,
-            string authorId,
-            int categoryId,
+            string title, 
+            PostType type, 
+            string description, 
+            string authorId, 
+            int categoryId, 
             IEnumerable<int> tagIds)
         {
             var post = new Post
@@ -61,10 +62,10 @@ namespace ForumSystem.Services.Posts
         }
 
         public async Task EditAsync(
-            int id,
-            string title,
-            string description,
-            int categoryId,
+            int id, 
+            string title, 
+            string description, 
+            int categoryId, 
             IEnumerable<int> tagIds)
         {
             var post = await this.GetByIdAsync(id);
@@ -259,9 +260,9 @@ namespace ForumSystem.Services.Posts
                 .ToListAsync();
 
         public async Task<IEnumerable<TModel>> GetAllFollowingByUserIdAsync<TModel>(
-            string userId,
-            string search = null,
-            int skip = 0,
+            string userId, 
+            string search = null, 
+            int skip = 0, 
             int? take = null)
         {
             var queryable = this.db.Posts

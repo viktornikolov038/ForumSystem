@@ -1,15 +1,16 @@
-﻿using ForumSystem.Common;
-using ForumSystem.Data.Models;
-using ForumSystem.Data.Models.Enums;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Data.Seeding
+﻿namespace ForumSystem.Data.Seeding
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using Microsoft.EntityFrameworkCore;
+
+    using ForumSystem.Common;
+    using Models;
+    using Models.Enums;
+
     internal class PostsSeeder : ISeeder
     {
         public async Task SeedAsync(ApplicationDbContext dbContext, IServiceProvider serviceProvider)
@@ -127,6 +128,7 @@ namespace ForumSystem.Data.Seeding
                     }
                 }
             };
+
             await dbContext.Posts.AddRangeAsync(posts);
         }
     }

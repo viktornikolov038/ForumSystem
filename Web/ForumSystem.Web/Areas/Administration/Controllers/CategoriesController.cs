@@ -1,16 +1,16 @@
-﻿using ForumSystem.Services.Categories;
-using ForumSystem.Web.InputModels.Categpries;
-using ForumSystem.Web.ViewModels.Categories;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Areas.Administration.Controllers
+﻿namespace ForumSystem.Web.Areas.Administration.Controllers
 {
+    using System.Threading.Tasks;
+    using ForumSystem.Web.InputModels.Categories;
+    using Microsoft.AspNetCore.Mvc;
+    using Services.Categories;
+    using ViewModels.Categories;
+
     public class CategoriesController : AdminController
     {
         private readonly ICategoriesService categoriesService;
 
-        public CategoriesController(ICategoriesService categoriesService)
+        public CategoriesController(ICategoriesService categoriesService) 
             => this.categoriesService = categoriesService;
 
         public async Task<IActionResult> All(string search = null)

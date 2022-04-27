@@ -1,14 +1,16 @@
-﻿using ForumSystem.Services.Posts;
-using ForumSystem.Services.Tags;
-using ForumSystem.Web.ViewModels.Posts;
-using ForumSystem.Web.ViewModels.Tags;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Controllers
+﻿namespace ForumSystem.Web.Controllers
 {
+    using System;
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc;
+
+    using Services.Posts;
+    using Services.Tags;
+    using ViewModels.Posts;
+    using ViewModels.Tags;
+
     public class TagsController : Controller
     {
         private const int TagsPerPage = 9;

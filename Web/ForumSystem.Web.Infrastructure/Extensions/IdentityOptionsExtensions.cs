@@ -1,13 +1,9 @@
-﻿using ForumSystem.Common;
-using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Infrastructure.Extensions
+﻿namespace ForumSystem.Web.Infrastructure.Extensions
 {
+    using Microsoft.AspNetCore.Identity;
+
+    using Common;
+
     public static class IdentityOptionsExtensions
     {
         public static IdentityOptions SetIdentityOptions(this IdentityOptions options)

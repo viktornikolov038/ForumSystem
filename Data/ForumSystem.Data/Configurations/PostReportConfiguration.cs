@@ -1,15 +1,11 @@
-﻿using ForumSystem.Common;
-using ForumSystem.Data.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Data.Configurations
+﻿namespace ForumSystem.Data.Configurations
 {
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+    using ForumSystem.Common;
+    using Models;
+
     public class PostReportConfiguration : IEntityTypeConfiguration<PostReport>
     {
         public void Configure(EntityTypeBuilder<PostReport> postReport)
@@ -37,4 +33,3 @@ namespace ForumSystem.Data.Configurations
         }
     }
 }
-

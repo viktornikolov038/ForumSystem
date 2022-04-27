@@ -1,12 +1,7 @@
-﻿using Ganss.XSS;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.ViewModels.Users
+﻿namespace ForumSystem.Web.ViewModels.Users
 {
+    using Ganss.XSS;
+
     public class UsersRepliesViewModel
     {
         private readonly IHtmlSanitizer sanitizer;

@@ -1,25 +1,24 @@
 ﻿namespace ForumSystem.Web.Infrastructure.Extensions
 {
     using CloudinaryDotNet;
+    using ForumSystem.Data;
+    using ForumSystem.Data.Models;
+    using ForumSystem.Services.Categories;
+    using ForumSystem.Services.Messages;
+    using ForumSystem.Services.Posts;
+    using ForumSystem.Services.Providers.Cloudinary;
+    using ForumSystem.Services.Providers.DateTime;
+    using ForumSystem.Services.Providers.Email;
+    using ForumSystem.Services.Reactions;
+    using ForumSystem.Services.Replies;
+    using ForumSystem.Services.Reports;
+    using ForumSystem.Services.Tags;
+    using ForumSystem.Services.Users;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-
-    using Data;
-    using Data.Models;
-    using Services.Categories;
-    using Services.Messages;
-    using Services.Posts;
-    using Services.Providers.Cloudinary;
-    using Services.Providers.DateTime;
-    using Services.Providers.Email;
-    using Services.Reactions;
-    using Services.Replies;
-    using Services.Reports;
-    using Services.Tags;
-    using Services.Users;
 
     public static class ServiceCollectionExtensions
     {
@@ -58,7 +57,20 @@
                 .AddAntiforgery(options => options
                     .HeaderName = AntiforgeryHeaderName);
 
+        public static IServiceCollection AddFacebookAuthentication(
+            this IServiceCollection services,
+            IConfiguration configuration)
+        {
+            services
+                .AddAuthentication()
+                .AddFacebook(facebookOptions =>
+                {
+                    facebookOptions.AppId = "Facebook:AppId";
+                    facebookOptions.AppSecret ="Facebook:AppSecret";
+                });
 
+            return services;
+        }
 
         public static IServiceCollection AddGoogleAuthentication(
             this IServiceCollection services,
@@ -68,8 +80,8 @@
                 .AddAuthentication()
                 .AddGoogle(googleOptions =>
                 {
-                    googleOptions.ClientId = configuration["Google:ClientId"];
-                    googleOptions.ClientSecret = configuration["Google:ClientSecret"];
+                    googleOptions.ClientId = "Google:ClientId";
+                    googleOptions.ClientSecret = "Google:ClientSecret";
                 });
 
             return services;
@@ -93,8 +105,8 @@
                 .AddTransient<IReplyReportsService, ReplyReportsService>()
                 .AddTransient<ITagsService, TagsService>()
                 .AddTransient<IUsersService, UsersService>()
-                .AddTransient<IEmailSender>(serviceProvider =>
-                    new SendGridEmailSender(configuration["SendGrid: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"]));
+                .AddTransient<IEmailSender>(serviceProvider => 
+                    new SendGridEmailSender("SendGrid:ApiKey"));
 
         public static IServiceCollection AddControllersWithAutoAntiforgeryTokenAttribute(this IServiceCollection services)
         {
@@ -108,28 +120,12 @@
 
         private static Cloudinary CloudinaryConfiguration(IConfiguration configuration)
         {
+            var cloudinaryCredentials = new Account(
+                "Cloudinary:CloudName",
+                "Cloudinary:ApiKey",
+                "Cloudinary:ApiSecret");
 
-            Account account = new Account(
-   "forumsystem",
-   "962955695447911",
-   "jxqUHBqiOZEmcPQdpN9Bev2hrSo");
-
-            Cloudinary cloudinary = new Cloudinary(account);
-            return cloudinary;
-        }
-         public static IServiceCollection AddFacebookAuthentication(
-            this IServiceCollection services,
-            IConfiguration configuration)
-        {
-            services
-                .AddAuthentication()
-                .AddFacebook(facebookOptions =>
-                {
-                    facebookOptions.AppId = "Authentication:Facebook:AppId";
-                    facebookOptions.AppSecret = "Authentication:Facebook:AppSecret";
-                });
-
-            return services;
+            return new Cloudinary(cloudinaryCredentials);
         }
     }
 }

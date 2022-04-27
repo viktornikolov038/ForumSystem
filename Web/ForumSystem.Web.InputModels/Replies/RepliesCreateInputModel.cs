@@ -1,13 +1,9 @@
-﻿using ForumSystem.Common;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.InputModels.Replies
+﻿namespace ForumSystem.Web.InputModels.Replies
 {
+    using System.ComponentModel.DataAnnotations;
+
+    using static Common.GlobalConstants;
+
     public class RepliesCreateInputModel
     {
         public int? ParentId { get; set; }
@@ -16,7 +12,7 @@ namespace ForumSystem.Web.InputModels.Replies
         public int PostId { get; set; }
 
         [Required]
-        [MaxLength(GlobalConstants.ReplyDescriptionMaxLength)]
+        [MaxLength(ReplyDescriptionMaxLength)]
         public string Description { get; set; }
     }
 }

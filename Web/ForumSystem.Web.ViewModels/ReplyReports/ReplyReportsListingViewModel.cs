@@ -1,8 +1,9 @@
-﻿using ForumSystem.Common;
-using Ganss.XSS;
-
-namespace ForumSystem.Web.ViewModels.ReplyReports
+﻿namespace ForumSystem.Web.ViewModels.ReplyReports
 {
+    using Ganss.XSS;
+
+    using ForumSystem.Common;
+
     public class ReplyReportsListingViewModel
     {
         private readonly IHtmlSanitizer sanitizer;

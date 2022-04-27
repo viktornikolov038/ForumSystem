@@ -1,18 +1,18 @@
-﻿using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using ForumSystem.Data;
-using ForumSystem.Data.Models;
-using ForumSystem.Services.Providers.DateTime;
-using ForumSystem.Services.Users;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Replies
+﻿namespace ForumSystem.Services.Replies
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using AutoMapper;
+    using AutoMapper.QueryableExtensions;
+    using Microsoft.EntityFrameworkCore;
+
+    using Data;
+    using Data.Models;
+    using Providers.DateTime;
+    using Users;
+
     public class RepliesService : IRepliesService
     {
         private readonly ApplicationDbContext db;

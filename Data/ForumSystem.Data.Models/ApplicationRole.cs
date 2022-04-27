@@ -20,7 +20,7 @@ namespace ForumSystem.Data.Models
             this.Id = Guid.NewGuid().ToString();
         }
 
-        public DateTime CreatedOn { get; set; }
+         public DateTime CreatedOn { get; set; }
 
         public DateTime? ModifiedOn { get; set; }
 
@@ -28,5 +28,4 @@ namespace ForumSystem.Data.Models
 
         public DateTime? DeletedOn { get; set; }
     }
-
 }

@@ -1,19 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Infrastructure.Attributes
+﻿namespace ForumSystem.Web.Infrastructure.Attributes
 {
+    using System;
+    using System.ComponentModel.DataAnnotations;
+    using System.Linq;
+
+    using Microsoft.AspNetCore.Http;
 
     public class FileVerifyExtensionsAttribute : ValidationAttribute
     {
         private readonly string extensions;
 
-        public FileVerifyExtensionsAttribute(string extensions)
+        public FileVerifyExtensionsAttribute(string extensions) 
             => this.extensions = extensions;
 
         public override bool IsValid(object value)

@@ -1,8 +1,10 @@
-﻿using ForumSystem.Data.Common.Models;
-using System;
-
-namespace ForumSystem.Data.Models
+﻿namespace ForumSystem.Data.Models
 {
+    using System;
+
+    using Common;
+    using ForumSystem.Data.Common.Models;
+
     public class UserFollower : IAuditInfo, IDeletableEntity
     {
         public string UserId { get; set; }

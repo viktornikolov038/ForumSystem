@@ -1,12 +1,14 @@
-﻿using ForumSystem.Services.Tags;
-using ForumSystem.Web.InputModels.Tags;
-using ForumSystem.Web.ViewModels.Tags;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Areas.Administration.Controllers
+﻿namespace ForumSystem.Web.Areas.Administration.Controllers
 {
+    using System;
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Mvc;
+
+    using InputModels.Tags;
+    using Services.Tags;
+    using ViewModels.Tags;
+
     public class TagsController : AdminController
     {
         private const int TagsPerPage = 9;

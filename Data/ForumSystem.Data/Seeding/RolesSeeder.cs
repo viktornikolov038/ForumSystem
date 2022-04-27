@@ -3,12 +3,12 @@
     using System;
     using System.Linq;
     using System.Threading.Tasks;
-
-    using ForumSystem.Common;
-    using ForumSystem.Data.Models;
-
+    
     using Microsoft.AspNetCore.Identity;
     using Microsoft.Extensions.DependencyInjection;
+    
+    using ForumSystem.Common;
+    using Models;
 
     internal class RolesSeeder : ISeeder
     {

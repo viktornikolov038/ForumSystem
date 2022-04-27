@@ -1,13 +1,11 @@
-﻿using ForumSystem.Common;
-using Ganss.XSS;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.ViewModels.Replies
+﻿namespace ForumSystem.Web.ViewModels.Replies
 {
+    using System.Collections.Generic;
+    using ForumSystem.Common;
+    using Ganss.XSS;
+
+ 
+
     public class RepliesDetailsViewModel
     {
         private readonly IHtmlSanitizer sanitizer;

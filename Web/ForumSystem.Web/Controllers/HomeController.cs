@@ -2,12 +2,14 @@
 {
     using System.Diagnostics;
     using System.Threading.Tasks;
-    using ForumSystem.Services.Posts;
-    using ForumSystem.Services.Reactions;
-    using ForumSystem.Services.Users;
-    using ForumSystem.Web.ViewModels;
-    using ForumSystem.Web.ViewModels.Home;
+
     using Microsoft.AspNetCore.Mvc;
+
+    using Services.Posts;
+    using Services.Reactions;
+    using Services.Users;
+    using ViewModels;
+    using ViewModels.Home;
 
     public class HomeController : Controller
     {

@@ -1,13 +1,15 @@
-﻿using ForumSystem.Services.Replies;
-using ForumSystem.Web.Infrastructure.Extensions;
-using ForumSystem.Web.InputModels.Replies;
-using ForumSystem.Web.ViewModels.Replies;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Controllers
+﻿namespace ForumSystem.Web.Controllers
 {
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc;
+
+    using Infrastructure.Extensions;
+    using InputModels.Replies;
+    using Services.Replies;
+    using ViewModels.Replies;
+
     [Authorize]
     public class RepliesController : Controller
     {
@@ -85,7 +87,7 @@ namespace ForumSystem.Web.Controllers
             {
                 return this.NotFound();
             }
-
+            
             if (reply.PostAuthorId != this.User.GetId() && !this.User.IsAdministrator())
             {
                 return this.Unauthorized();

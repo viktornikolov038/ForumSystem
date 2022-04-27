@@ -1,22 +1,18 @@
-﻿using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using ForumSystem.Data;
-using ForumSystem.Data.Models;
-using ForumSystem.Services.Providers.DateTime;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ForumSystem.Common;
-
-namespace ForumSystem.Services.Messages
+﻿namespace ForumSystem.Services.Messages
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using AutoMapper;
+    using AutoMapper.QueryableExtensions;
+    using Microsoft.EntityFrameworkCore;
+
+    using Common;
+    using Data;
+    using Data.Models;
+    using Providers.DateTime;
+
     public class MessagesService : IMessagesService
     {
         private readonly ApplicationDbContext db;
@@ -62,7 +58,7 @@ namespace ForumSystem.Services.Messages
                 .Select(m => m.Content)
                 .FirstOrDefaultAsync();
 
-        public async Task<IEnumerable<TModel>> GetAllWithUserAsync<TModel>(string currentUserId, string userId)
+        public async Task<IEnumerable<TModel>> GetAllWithUserAsync<TModel>(string currentUserId, string userId) 
             => await this.db.Messages
                 .Where(m => !m.IsDeleted &&
                             ((m.ReceiverId == currentUserId && m.AuthorId == userId) ||

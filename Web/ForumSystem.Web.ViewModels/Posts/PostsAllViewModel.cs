@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.ViewModels.Posts
+﻿namespace ForumSystem.Web.ViewModels.Posts
 {
+    using System.Collections.Generic;
+
     public class PostsAllViewModel
     {
         public IEnumerable<PostsListingViewModel> Posts { get; set; }
@@ -45,4 +41,3 @@ namespace ForumSystem.Web.ViewModels.Posts
         }
     }
 }
-

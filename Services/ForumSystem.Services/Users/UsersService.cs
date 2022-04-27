@@ -1,18 +1,18 @@
-﻿using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using ForumSystem.Common;
-using ForumSystem.Data;
-using ForumSystem.Data.Models;
-using ForumSystem.Services.Providers.DateTime;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Users
+﻿namespace ForumSystem.Services.Users
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using AutoMapper;
+    using AutoMapper.QueryableExtensions;
+    using Microsoft.EntityFrameworkCore;
+
+    using Common;
+    using Data;
+    using Data.Models;
+    using Providers.DateTime;
+
     public class UsersService : IUsersService
     {
         private readonly ApplicationDbContext db;
@@ -98,47 +98,47 @@ namespace ForumSystem.Services.Users
             return isFollowed;
         }
 
-        public async Task<bool> IsUsernameUsedAsync(string username)
+        public async Task<bool> IsUsernameUsedAsync(string username) 
             => await this.db.Users.AnyAsync(u => u.UserName == username && !u.IsDeleted);
 
-        public async Task<bool> IsDeletedAsync(string username)
+        public async Task<bool> IsDeletedAsync(string username) 
             => await this.db.Users.AnyAsync(u => u.UserName == username && u.IsDeleted);
 
-        public async Task<bool> IsFollowedAlreadyAsync(string id, string followerId)
+        public async Task<bool> IsFollowedAlreadyAsync(string id, string followerId) 
             => await this.db.UsersFollowers
-                .AnyAsync(uf => uf.UserId == id &&
-                                uf.FollowerId == followerId &&
+                .AnyAsync(uf => uf.UserId == id && 
+                                uf.FollowerId == followerId && 
                                 !uf.IsDeleted);
 
-        public async Task<int> GetTotalCountAsync()
+        public async Task<int> GetTotalCountAsync() 
             => await this.db.Users
                 .Where(u => !u.IsDeleted)
                 .CountAsync();
 
-        public async Task<int> GetFollowersCountAsync(string id)
+        public async Task<int> GetFollowersCountAsync(string id) 
             => await this.db.UsersFollowers
-                .Where(uf => !uf.IsDeleted &&
-                             !uf.User.IsDeleted &&
-                             !uf.Follower.IsDeleted &&
+                .Where(uf => !uf.IsDeleted && 
+                             !uf.User.IsDeleted && 
+                             !uf.Follower.IsDeleted && 
                              uf.UserId == id)
                 .CountAsync();
 
-        public async Task<int> GetFollowingCountAsync(string id)
+        public async Task<int> GetFollowingCountAsync(string id) 
             => await this.db.UsersFollowers
-                .Where(uf => !uf.IsDeleted &&
-                             !uf.User.IsDeleted &&
-                             !uf.Follower.IsDeleted &&
+                .Where(uf => !uf.IsDeleted && 
+                             !uf.User.IsDeleted && 
+                             !uf.Follower.IsDeleted && 
                              uf.FollowerId == id)
                 .CountAsync();
 
-        public async Task<TModel> GetByIdAsync<TModel>(string id)
+        public async Task<TModel> GetByIdAsync<TModel>(string id) 
             => await this.db.Users
                 .AsNoTracking()
                 .Where(u => u.Id == id && !u.IsDeleted)
                 .ProjectTo<TModel>(this.mapper.ConfigurationProvider)
                 .FirstOrDefaultAsync();
 
-        public async Task<IEnumerable<TModel>> GetAllAsync<TModel>()
+        public async Task<IEnumerable<TModel>> GetAllAsync<TModel>() 
             => await this.db.Users
                 .AsNoTracking()
                 .Where(u => !u.IsDeleted)
@@ -163,21 +163,21 @@ namespace ForumSystem.Services.Users
             return admins;
         }
 
-        public async Task<IEnumerable<TModel>> GetFollowersAsync<TModel>(string id)
+        public async Task<IEnumerable<TModel>> GetFollowersAsync<TModel>(string id) 
             => await this.db.UsersFollowers
                 .AsNoTracking()
-                .Where(uf => uf.UserId == id &&
-                             !uf.IsDeleted &&
+                .Where(uf => uf.UserId == id && 
+                             !uf.IsDeleted && 
                              !uf.Follower.IsDeleted)
                 .Select(uf => uf.Follower)
                 .ProjectTo<TModel>(this.mapper.ConfigurationProvider)
                 .ToListAsync();
 
-        public async Task<IEnumerable<TModel>> GetFollowingAsync<TModel>(string id)
+        public async Task<IEnumerable<TModel>> GetFollowingAsync<TModel>(string id) 
             => await this.db.UsersFollowers
                 .AsNoTracking()
-                .Where(uf => uf.FollowerId == id &&
-                             !uf.IsDeleted &&
+                .Where(uf => uf.FollowerId == id && 
+                             !uf.IsDeleted && 
                              !uf.User.IsDeleted)
                 .Select(uf => uf.User)
                 .ProjectTo<TModel>(this.mapper.ConfigurationProvider)

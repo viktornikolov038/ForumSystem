@@ -1,16 +1,15 @@
-﻿using ForumSystem.Data;
-using ForumSystem.Data.Models;
-using ForumSystem.Data.Models.Enums;
-using ForumSystem.Services.Providers.DateTime;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Reactions
+﻿namespace ForumSystem.Services.Reactions
 {
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using Microsoft.EntityFrameworkCore;
+
+    using Data;
+    using Data.Models;
+    using Data.Models.Enums;
+    using Providers.DateTime;
+
     public class PostReactionsService : IPostReactionsService
     {
         private readonly ApplicationDbContext db;
@@ -62,10 +61,10 @@ namespace ForumSystem.Services.Reactions
             {
                 Likes = await this.GetCountByTypeAndPostIdAsync(ReactionType.Like, postId),
                 Loves = await this.GetCountByTypeAndPostIdAsync(ReactionType.Love, postId),
-                HahaCount = await this.GetCountByTypeAndPostIdAsync(ReactionType.GgagagaahahahhaahHaha, postId),
+                HahaCount = await this.GetCountByTypeAndPostIdAsync(ReactionType.Haha, postId),
                 WowCount = await this.GetCountByTypeAndPostIdAsync(ReactionType.Wow, postId),
-                SadCount = await this.GetCountByTypeAndPostIdAsync(ReactionType.Mad, postId),
-                AngryCount = await this.GetCountByTypeAndPostIdAsync(ReactionType.Rage, postId)
+                SadCount = await this.GetCountByTypeAndPostIdAsync(ReactionType.Sad, postId),
+                AngryCount = await this.GetCountByTypeAndPostIdAsync(ReactionType.Angry, postId)
             };
 
         private async Task<int> GetCountByTypeAndPostIdAsync(ReactionType reactionType, int postId)

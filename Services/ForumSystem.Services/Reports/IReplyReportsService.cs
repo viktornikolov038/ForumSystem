@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Reports
+﻿namespace ForumSystem.Services.Reports
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+
     public interface IReplyReportsService
     {
         Task CreateAsync(string description, int replyId, string authorId);

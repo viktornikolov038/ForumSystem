@@ -1,17 +1,19 @@
-﻿using ForumSystem.Services.Users;
-using ForumSystem.Web.Infrastructure.Extensions;
-using ForumSystem.Web.ViewModels.Users;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Components
+﻿namespace ForumSystem.Web.Components
 {
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Mvc;
+
+    using Infrastructure.Extensions;
+    using Services.Users;
+    using ViewModels.Users;
+
     [ViewComponent(Name = "UsersFollowButton")]
     public class UsersFollowButtonViewComponent : ViewComponent
     {
         private readonly IUsersService usersService;
 
-        public UsersFollowButtonViewComponent(IUsersService usersService)
+        public UsersFollowButtonViewComponent(IUsersService usersService) 
             => this.usersService = usersService;
 
         public async Task<IViewComponentResult> InvokeAsync(string userId)

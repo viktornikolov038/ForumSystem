@@ -1,18 +1,20 @@
-﻿using ForumSystem.Services.Categories;
-using ForumSystem.Services.Posts;
-using ForumSystem.Services.Replies;
-using ForumSystem.Services.Tags;
-using ForumSystem.Services.Users;
-using ForumSystem.Web.Infrastructure.Extensions;
-using ForumSystem.Web.InputModels.Posts;
-using ForumSystem.Web.ViewModels.Posts;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Controllers
+﻿namespace ForumSystem.Web.Controllers
 {
+    using System;
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Mvc;
+
+    using Infrastructure.Extensions;
+    using InputModels.Posts;
+    using Services.Categories;
+    using Services.Posts;
+    using Services.Replies;
+    using Services.Tags;
+    using Services.Users;
+    using ViewModels.Posts;
+
     [Authorize]
     public class PostsController : Controller
     {

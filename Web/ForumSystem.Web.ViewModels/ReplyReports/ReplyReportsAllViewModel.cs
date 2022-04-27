@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.ViewModels.ReplyReports
+﻿namespace ForumSystem.Web.ViewModels.ReplyReports
 {
+    using System.Collections.Generic;
+
     public class ReplyReportsAllViewModel
     {
         public IEnumerable<ReplyReportsListingViewModel> ReplyReports { get; set; }
