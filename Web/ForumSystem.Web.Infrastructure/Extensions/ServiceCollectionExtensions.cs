@@ -105,7 +105,7 @@
                 .AddTransient<IReplyReportsService, ReplyReportsService>()
                 .AddTransient<ITagsService, TagsService>()
                 .AddTransient<IUsersService, UsersService>()
-                .AddTransient<IEmailSender>(serviceProvider => 
+                .AddTransient<IEmailSender>(serviceProvider =>
                     new SendGridEmailSender("SendGrid:ApiKey"));
 
         public static IServiceCollection AddControllersWithAutoAntiforgeryTokenAttribute(this IServiceCollection services)

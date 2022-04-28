@@ -1,10 +1,9 @@
 ﻿namespace ForumSystem.Data.Configurations
 {
+    using ForumSystem.Common;
+    using ForumSystem.Data.Models;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
-    using ForumSystem.Common;
-    using Models;
 
     public class TagConfiguration : IEntityTypeConfiguration<Tag>
     {

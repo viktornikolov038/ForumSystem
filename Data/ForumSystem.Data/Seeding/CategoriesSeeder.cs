@@ -27,7 +27,7 @@
                 new Category { Name = "Tv", CreatedOn = DateTime.UtcNow },
                 new Category { Name = "Health & Fitness", CreatedOn = DateTime.UtcNow },
                 new Category { Name = "Music", CreatedOn = DateTime.UtcNow },
-                new Category { Name = "Cars", CreatedOn = DateTime.UtcNow }
+                new Category { Name = "Cars", CreatedOn = DateTime.UtcNow },
             };
 
             await dbContext.AddRangeAsync(categories);

@@ -64,13 +64,13 @@
                     {
                         new PostTag
                         {
-                            TagId = tagIds[1]
+                            TagId = tagIds[1],
                         },
                         new PostTag
                         {
-                            TagId = tagIds[2]
+                            TagId = tagIds[2],
                         },
-                    }
+                    },
                 },
                 new Post
                 {
@@ -102,9 +102,9 @@
                     {
                         new PostTag
                         {
-                            TagId = tagIds[0]
-                        }
-                    }
+                            TagId = tagIds[0],
+                        },
+                    },
                 },
                 new Post
                 {
@@ -124,9 +124,9 @@
                         new PostTag
                         {
                             TagId = tagIds[0]
-                        }
-                    }
-                }
+                        },
+                    },
+                },
             };
 
             await dbContext.Posts.AddRangeAsync(posts);

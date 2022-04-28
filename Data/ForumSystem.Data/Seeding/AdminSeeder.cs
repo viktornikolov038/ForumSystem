@@ -26,7 +26,7 @@
                     UserName = GlobalConstants.AdministratorUserName,
                     Email = GlobalConstants.AdministratorEmail,
                     ProfilePicture = GlobalConstants.AdministratorProfilePicture,
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
                 };
 
                 var result = await userManager.CreateAsync(admin, GlobalConstants.AdministratorPassword);

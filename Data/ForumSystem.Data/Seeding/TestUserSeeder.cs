@@ -25,7 +25,7 @@
                     UserName = GlobalConstants.TestUserUserName,
                     Email = GlobalConstants.TestUserEmail,
                     ProfilePicture = GlobalConstants.TestUserProfilePicture,
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
                 };
 
                 var result = await userManager.CreateAsync(testUser, GlobalConstants.TestUserPassword);

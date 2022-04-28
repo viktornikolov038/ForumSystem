@@ -9,7 +9,6 @@
 
     public class ApplicationDbContextSeeder : ISeeder
     {
-        
         public async Task SeedAsync(ApplicationDbContext dbContext, IServiceProvider serviceProvider)
         {
             if (dbContext == null)
@@ -29,7 +28,7 @@
                 new TestUserSeeder(),
                 new TagsSeeder(),
                 new CategoriesSeeder(),
-                new PostsSeeder()
+                new PostsSeeder(),
             };
 
             foreach (var seeder in seeders)
