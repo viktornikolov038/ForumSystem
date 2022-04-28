@@ -5,11 +5,10 @@
     using System.Linq;
     using System.Threading.Tasks;
 
-    using Microsoft.EntityFrameworkCore;
-
     using ForumSystem.Common;
-    using Models;
-    using Models.Enums;
+    using ForumSystem.Data.Models;
+    using ForumSystem.Data.Models.Enums;
+    using Microsoft.EntityFrameworkCore;
 
     internal class PostsSeeder : ISeeder
     {
