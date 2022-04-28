@@ -1,9 +1,8 @@
 ﻿namespace ForumSystem.Data.Configurations
 {
+    using ForumSystem.Data.Models;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
-    using Models;
 
     public class UsersFollowrsConfiguration : IEntityTypeConfiguration<UserFollower>
     {
