@@ -4,12 +4,11 @@
     using System.Linq;
     using System.Threading.Tasks;
 
+    using ForumSystem.Common;
+    using ForumSystem.Data.Models;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.DependencyInjection;
-
-    using ForumSystem.Common;
-    using Models;
 
     internal class AdminSeeder : ISeeder
     {
