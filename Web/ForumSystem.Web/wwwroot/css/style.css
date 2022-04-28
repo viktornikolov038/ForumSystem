@@ -62,7 +62,7 @@ body {
     line-height: 1.5;
     color: #666f74;
     text-align: left;
-    background-color: #f8f9fb;
+    background-color: #18cae87d;
 }
 
 [tabindex="-1"]:focus {
@@ -5987,7 +5987,7 @@ hr {
 }
 
     .tt-title-separator span {
-        background-color: #f8f9fb;
+        background-color: #18cae87d;
         position: relative;
         z-index: 2;
         display: inline-block;
@@ -7688,7 +7688,7 @@ hr {
 }
 
 .tt-topic-list .tt-item.tt-item-popup {
-    background-color: #1cbbb4;
+    background-color: #bb1c6c;
     color: #ffffff;
 }
 
@@ -8358,7 +8358,7 @@ hr {
     }
 
     .tt-badge.tt-color07 {
-        background-color: #1cbbb4;
+        background-color: #bb1c6c;
     }
 
     .tt-badge.tt-color08 {

@@ -10,3 +10,15 @@ D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSyste
 D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\refint\ForumSystem.Service.Providers.dll
 D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.pdb
 D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ref\ForumSystem.Service.Providers.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\bin\Debug\net6.0\ForumSystem.Service.Providers.deps.json
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\bin\Debug\net6.0\ForumSystem.Service.Providers.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\bin\Debug\net6.0\ForumSystem.Service.Providers.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.csproj.AssemblyReference.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.AssemblyInfoInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.AssemblyInfo.cs
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.csproj.CoreCompileInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\refint\ForumSystem.Service.Providers.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ref\ForumSystem.Service.Providers.dll
