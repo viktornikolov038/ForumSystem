@@ -1,0 +1,56 @@
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.csproj.AssemblyReference.cache
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.AssemblyInfoInputs.cache
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.AssemblyInfo.cs
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.csproj.CoreCompileInputs.cache
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\appsettings.json
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Web.Infrastructure.deps.json
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Web.Infrastructure.runtimeconfig.json
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Web.Infrastructure.dll
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Web.Infrastructure.pdb
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Common.dll
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.Common.dll
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.dll
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.Models.dll
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Service.Providers.dll
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Services.dll
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.pdb
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Services.pdb
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Common.pdb
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.Common.pdb
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.Models.pdb
+D:\New folder\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Service.Providers.pdb
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.csproj.CopyComplete
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.dll
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\refint\ForumSystem.Web.Infrastructure.dll
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.pdb
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.genruntimeconfig.cache
+D:\New folder\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ref\ForumSystem.Web.Infrastructure.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\appsettings.json
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Web.Infrastructure.deps.json
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Web.Infrastructure.runtimeconfig.json
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Web.Infrastructure.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Web.Infrastructure.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.Models.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Service.Providers.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Services.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Services.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Common.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.Common.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Data.Models.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\bin\Debug\net6.0\ForumSystem.Service.Providers.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.AssemblyInfo.cs
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.csproj.CopyComplete
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\refint\ForumSystem.Web.Infrastructure.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ForumSystem.Web.Infrastructure.genruntimeconfig.cache
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.Infrastructure\obj\Debug\net6.0\ref\ForumSystem.Web.Infrastructure.dll

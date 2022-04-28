@@ -1,0 +1,44 @@
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.csproj.AssemblyReference.cache
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.AssemblyInfoInputs.cache
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.AssemblyInfo.cs
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.csproj.CoreCompileInputs.cache
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\appsettings.json
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.deps.json
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.runtimeconfig.json
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.dll
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.pdb
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Common.dll
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.Common.dll
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.Models.dll
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Common.pdb
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.Common.pdb
+D:\New folder\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.Models.pdb
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.csproj.CopyComplete
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.dll
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\refint\ForumSystem.Data.dll
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.pdb
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.genruntimeconfig.cache
+D:\New folder\Data\ForumSystem.Data\obj\Debug\net6.0\ref\ForumSystem.Data.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\appsettings.json
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.deps.json
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.runtimeconfig.json
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.Models.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Common.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.Common.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\bin\Debug\net6.0\ForumSystem.Data.Models.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.csproj.AssemblyReference.cache
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.AssemblyInfoInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.AssemblyInfo.cs
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.csproj.CoreCompileInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.csproj.CopyComplete
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\refint\ForumSystem.Data.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\ForumSystem.Data.genruntimeconfig.cache
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data\obj\Debug\net6.0\ref\ForumSystem.Data.dll

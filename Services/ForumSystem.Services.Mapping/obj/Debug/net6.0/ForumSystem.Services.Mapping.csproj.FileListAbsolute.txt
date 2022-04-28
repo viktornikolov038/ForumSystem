@@ -1,0 +1,24 @@
+D:\New folder\Services\ForumSystem.Services.Mapping\bin\Debug\net6.0\ForumSystem.Services.Mapping.deps.json
+D:\New folder\Services\ForumSystem.Services.Mapping\bin\Debug\net6.0\ForumSystem.Services.Mapping.dll
+D:\New folder\Services\ForumSystem.Services.Mapping\bin\Debug\net6.0\ForumSystem.Services.Mapping.pdb
+D:\New folder\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.csproj.AssemblyReference.cache
+D:\New folder\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.AssemblyInfoInputs.cache
+D:\New folder\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.AssemblyInfo.cs
+D:\New folder\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.csproj.CoreCompileInputs.cache
+D:\New folder\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.dll
+D:\New folder\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\refint\ForumSystem.Services.Mapping.dll
+D:\New folder\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.pdb
+D:\New folder\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ref\ForumSystem.Services.Mapping.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\bin\Debug\net6.0\ForumSystem.Services.Mapping.deps.json
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\bin\Debug\net6.0\ForumSystem.Services.Mapping.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\bin\Debug\net6.0\ForumSystem.Services.Mapping.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.csproj.AssemblyReference.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.AssemblyInfoInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.AssemblyInfo.cs
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\refint\ForumSystem.Services.Mapping.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ForumSystem.Services.Mapping.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Mapping\obj\Debug\net6.0\ref\ForumSystem.Services.Mapping.dll

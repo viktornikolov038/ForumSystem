@@ -1,0 +1,24 @@
+D:\New folder\ForumSystem.Common\bin\Debug\net6.0\ForumSystem.Common.deps.json
+D:\New folder\ForumSystem.Common\bin\Debug\net6.0\ForumSystem.Common.dll
+D:\New folder\ForumSystem.Common\bin\Debug\net6.0\ForumSystem.Common.pdb
+D:\New folder\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.csproj.AssemblyReference.cache
+D:\New folder\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.AssemblyInfoInputs.cache
+D:\New folder\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.AssemblyInfo.cs
+D:\New folder\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.csproj.CoreCompileInputs.cache
+D:\New folder\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.dll
+D:\New folder\ForumSystem.Common\obj\Debug\net6.0\refint\ForumSystem.Common.dll
+D:\New folder\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.pdb
+D:\New folder\ForumSystem.Common\obj\Debug\net6.0\ref\ForumSystem.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\bin\Debug\net6.0\ForumSystem.Common.deps.json
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\bin\Debug\net6.0\ForumSystem.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\bin\Debug\net6.0\ForumSystem.Common.pdb
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.csproj.AssemblyReference.cache
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.AssemblyInfoInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.AssemblyInfo.cs
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.csproj.CoreCompileInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\obj\Debug\net6.0\refint\ForumSystem.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\obj\Debug\net6.0\ForumSystem.Common.pdb
+C:\Users\Viktor\Desktop\ForumSystem\ForumSystem.Common\obj\Debug\net6.0\ref\ForumSystem.Common.dll

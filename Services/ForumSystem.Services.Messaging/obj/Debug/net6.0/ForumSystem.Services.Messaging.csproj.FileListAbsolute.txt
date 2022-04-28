@@ -1,0 +1,24 @@
+D:\New folder\Services\ForumSystem.Services.Messaging\bin\Debug\net6.0\ForumSystem.Services.Messaging.deps.json
+D:\New folder\Services\ForumSystem.Services.Messaging\bin\Debug\net6.0\ForumSystem.Services.Messaging.dll
+D:\New folder\Services\ForumSystem.Services.Messaging\bin\Debug\net6.0\ForumSystem.Services.Messaging.pdb
+D:\New folder\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.csproj.AssemblyReference.cache
+D:\New folder\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.AssemblyInfoInputs.cache
+D:\New folder\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.AssemblyInfo.cs
+D:\New folder\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.csproj.CoreCompileInputs.cache
+D:\New folder\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.dll
+D:\New folder\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\refint\ForumSystem.Services.Messaging.dll
+D:\New folder\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.pdb
+D:\New folder\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ref\ForumSystem.Services.Messaging.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\bin\Debug\net6.0\ForumSystem.Services.Messaging.deps.json
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\bin\Debug\net6.0\ForumSystem.Services.Messaging.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\bin\Debug\net6.0\ForumSystem.Services.Messaging.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.csproj.AssemblyReference.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.AssemblyInfoInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.AssemblyInfo.cs
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.csproj.CoreCompileInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\refint\ForumSystem.Services.Messaging.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ForumSystem.Services.Messaging.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Messaging\obj\Debug\net6.0\ref\ForumSystem.Services.Messaging.dll

@@ -1,0 +1,30 @@
+D:\New folder\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.csproj.AssemblyReference.cache
+D:\New folder\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.AssemblyInfoInputs.cache
+D:\New folder\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.AssemblyInfo.cs
+D:\New folder\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.csproj.CoreCompileInputs.cache
+D:\New folder\Data\ForumSystem.Data.Models\bin\Debug\net6.0\ForumSystem.Data.Models.deps.json
+D:\New folder\Data\ForumSystem.Data.Models\bin\Debug\net6.0\ForumSystem.Data.Models.dll
+D:\New folder\Data\ForumSystem.Data.Models\bin\Debug\net6.0\ForumSystem.Data.Models.pdb
+D:\New folder\Data\ForumSystem.Data.Models\bin\Debug\net6.0\ForumSystem.Data.Common.dll
+D:\New folder\Data\ForumSystem.Data.Models\bin\Debug\net6.0\ForumSystem.Data.Common.pdb
+D:\New folder\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.csproj.CopyComplete
+D:\New folder\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.dll
+D:\New folder\Data\ForumSystem.Data.Models\obj\Debug\net6.0\refint\ForumSystem.Data.Models.dll
+D:\New folder\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.pdb
+D:\New folder\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ref\ForumSystem.Data.Models.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\bin\Debug\net6.0\ForumSystem.Data.Models.deps.json
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\bin\Debug\net6.0\ForumSystem.Data.Models.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\bin\Debug\net6.0\ForumSystem.Data.Models.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\bin\Debug\net6.0\ForumSystem.Data.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\bin\Debug\net6.0\ForumSystem.Data.Common.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.csproj.AssemblyReference.cache
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.AssemblyInfoInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.AssemblyInfo.cs
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.csproj.CoreCompileInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.csproj.CopyComplete
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\obj\Debug\net6.0\refint\ForumSystem.Data.Models.dll
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ForumSystem.Data.Models.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Data\ForumSystem.Data.Models\obj\Debug\net6.0\ref\ForumSystem.Data.Models.dll

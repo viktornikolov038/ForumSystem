@@ -1,0 +1,38 @@
+D:\New folder\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.csproj.AssemblyReference.cache
+D:\New folder\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.AssemblyInfoInputs.cache
+D:\New folder\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.AssemblyInfo.cs
+D:\New folder\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.csproj.CoreCompileInputs.cache
+D:\New folder\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Services.Data.deps.json
+D:\New folder\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Services.Data.dll
+D:\New folder\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Services.Data.pdb
+D:\New folder\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Data.Common.dll
+D:\New folder\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Data.Models.dll
+D:\New folder\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Services.Mapping.dll
+D:\New folder\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Data.Common.pdb
+D:\New folder\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Data.Models.pdb
+D:\New folder\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Services.Mapping.pdb
+D:\New folder\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.csproj.CopyComplete
+D:\New folder\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.dll
+D:\New folder\Services\ForumSystem.Services.Data\obj\Debug\net6.0\refint\ForumSystem.Services.Data.dll
+D:\New folder\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.pdb
+D:\New folder\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ref\ForumSystem.Services.Data.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Services.Data.deps.json
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Services.Data.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Services.Data.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Data.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Data.Models.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Services.Mapping.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Data.Common.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Data.Models.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\bin\Debug\net6.0\ForumSystem.Services.Mapping.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.csproj.AssemblyReference.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.AssemblyInfoInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.AssemblyInfo.cs
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.csproj.CoreCompileInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.csproj.CopyComplete
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\obj\Debug\net6.0\refint\ForumSystem.Services.Data.dll
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ForumSystem.Services.Data.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Services\ForumSystem.Services.Data\obj\Debug\net6.0\ref\ForumSystem.Services.Data.dll

@@ -1,0 +1,12 @@
+D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.csproj.AssemblyReference.cache
+D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.AssemblyInfoInputs.cache
+D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.AssemblyInfo.cs
+D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.csproj.CoreCompileInputs.cache
+D:\New folder\Services\ForumSystem.Service.Providers\bin\Debug\net6.0\ForumSystem.Service.Providers.deps.json
+D:\New folder\Services\ForumSystem.Service.Providers\bin\Debug\net6.0\ForumSystem.Service.Providers.dll
+D:\New folder\Services\ForumSystem.Service.Providers\bin\Debug\net6.0\ForumSystem.Service.Providers.pdb
+D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.dll
+D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\refint\ForumSystem.Service.Providers.dll
+D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ForumSystem.Service.Providers.pdb
+D:\New folder\Services\ForumSystem.Service.Providers\obj\Debug\net6.0\ref\ForumSystem.Service.Providers.dll

@@ -1,0 +1,42 @@
+D:\New folder\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.csproj.AssemblyReference.cache
+D:\New folder\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.AssemblyInfoInputs.cache
+D:\New folder\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.AssemblyInfo.cs
+D:\New folder\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.csproj.CoreCompileInputs.cache
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Web.ViewModels.deps.json
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Web.ViewModels.dll
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Web.ViewModels.pdb
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Common.dll
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Data.Common.dll
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Data.Models.dll
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Services.Mapping.dll
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Data.Models.pdb
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Common.pdb
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Services.Mapping.pdb
+D:\New folder\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Data.Common.pdb
+D:\New folder\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.csproj.CopyComplete
+D:\New folder\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.dll
+D:\New folder\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\refint\ForumSystem.Web.ViewModels.dll
+D:\New folder\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.pdb
+D:\New folder\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ref\ForumSystem.Web.ViewModels.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Web.ViewModels.deps.json
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Web.ViewModels.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Web.ViewModels.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Data.Common.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Data.Models.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Services.Mapping.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Data.Models.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Common.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Services.Mapping.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\bin\Debug\net6.0\ForumSystem.Data.Common.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.csproj.AssemblyReference.cache
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.AssemblyInfo.cs
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.csproj.CopyComplete
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\refint\ForumSystem.Web.ViewModels.dll
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ForumSystem.Web.ViewModels.pdb
+C:\Users\Viktor\Desktop\ForumSystem\Web\ForumSystem.Web.ViewModels\obj\Debug\net6.0\ref\ForumSystem.Web.ViewModels.dll

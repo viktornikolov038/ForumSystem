@@ -1,20 +1,19 @@
-﻿namespace ForumSystem.Services.Posts
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using ForumSystem.Data;
+using ForumSystem.Data.Models;
+using ForumSystem.Data.Models.Enums;
+using ForumSystem.Services.Providers.DateTime;
+using ForumSystem.Services.Users;
+using Microsoft.EntityFrameworkCore;
+
+namespace ForumSystem.Services.Posts
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-
-    using AutoMapper;
-    using AutoMapper.QueryableExtensions;
-    using Microsoft.EntityFrameworkCore;
-
-    using Data;
-    using Data.Models;
-    using Data.Models.Enums;
-    using Providers.DateTime;
-    using Users;
-
     public class PostsService : IPostsService
     {
         private readonly ApplicationDbContext db;
