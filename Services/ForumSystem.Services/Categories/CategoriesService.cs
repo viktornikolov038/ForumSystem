@@ -3,12 +3,14 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+
     using AutoMapper;
     using AutoMapper.QueryableExtensions;
     using ForumSystem.Services.Providers.DateTime;
     using ForumSystem.Data;
     using ForumSystem.Data.Models;
     using Microsoft.EntityFrameworkCore;
+
     public class CategoriesService : ICategoriesService
     {
         private readonly ApplicationDbContext db;
