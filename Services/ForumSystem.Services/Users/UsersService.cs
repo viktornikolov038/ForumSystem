@@ -6,12 +6,11 @@
 
     using AutoMapper;
     using AutoMapper.QueryableExtensions;
+    using ForumSystem.Common;
+    using ForumSystem.Data;
+    using ForumSystem.Data.Models;
+    using ForumSystem.Services.Providers.DateTime;
     using Microsoft.EntityFrameworkCore;
-
-    using Common;
-    using Data;
-    using Data.Models;
-    using Providers.DateTime;
 
     public class UsersService : IUsersService
     {
@@ -70,7 +69,7 @@
                 {
                     UserId = userId,
                     FollowerId = followerId,
-                    CreatedOn = this.dateTimeProvider.Now()
+                    CreatedOn = this.dateTimeProvider.Now(),
                 };
 
                 isFollowed = true;

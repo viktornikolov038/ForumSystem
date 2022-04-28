@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using ForumSystem.Data;
-using ForumSystem.Data.Models;
-using ForumSystem.Data.Models.Enums;
-using ForumSystem.Services.Providers.DateTime;
-using ForumSystem.Services.Users;
-using Microsoft.EntityFrameworkCore;
-
-namespace ForumSystem.Services.Posts
+﻿namespace ForumSystem.Services.Posts
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using AutoMapper;
+    using AutoMapper.QueryableExtensions;
+    using ForumSystem.Data;
+    using ForumSystem.Data.Models;
+    using ForumSystem.Data.Models.Enums;
+    using ForumSystem.Services.Providers.DateTime;
+    using ForumSystem.Services.Users;
+    using Microsoft.EntityFrameworkCore;
+
     public class PostsService : IPostsService
     {
         private readonly ApplicationDbContext db;
@@ -48,7 +48,7 @@ namespace ForumSystem.Services.Posts
                 Description = description,
                 CreatedOn = this.dateTimeProvider.Now(),
                 AuthorId = authorId,
-                CategoryId = categoryId
+                CategoryId = categoryId,
             };
 
             await this.db.Posts.AddAsync(post);
@@ -304,7 +304,7 @@ namespace ForumSystem.Services.Posts
                 post.Tags.Add(new PostTag
                 {
                     PostId = id,
-                    TagId = tagId
+                    TagId = tagId,
                 });
             }
 

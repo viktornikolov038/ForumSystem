@@ -6,15 +6,15 @@
 
     using AutoMapper;
     using AutoMapper.QueryableExtensions;
-    using ForumSystem.Services.Providers.DateTime;
     using ForumSystem.Data;
     using ForumSystem.Data.Models;
+    using ForumSystem.Services.Providers.DateTime;
     using Microsoft.EntityFrameworkCore;
 
     public class CategoriesService : ICategoriesService
     {
         private readonly ApplicationDbContext db;
-        private readonly IMapper mapper; 
+        private readonly IMapper mapper;
         private readonly IDateTimeProvider dateTimeProvider;
 
         public CategoriesService(ApplicationDbContext db, IMapper mapper, IDateTimeProvider dateTimeProvider)
@@ -29,7 +29,7 @@
             var category = new Category
             {
                 Name = name,
-                CreatedOn = this.dateTimeProvider.Now()
+                CreatedOn = this.dateTimeProvider.Now(),
             };
 
             await this.db.Categories.AddAsync(category);
@@ -56,7 +56,7 @@
             await this.db.SaveChangesAsync();
         }
 
-        public async Task<bool> IsExistingAsync(int id) 
+        public async Task<bool> IsExistingAsync(int id)
             => await this.db.Categories.AnyAsync(c => c.Id == id && !c.IsDeleted);
 
         public async Task<bool> IsExistingAsync(string name) 
