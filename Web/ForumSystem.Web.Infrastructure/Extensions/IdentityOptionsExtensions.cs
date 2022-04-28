@@ -1,8 +1,7 @@
 ﻿namespace ForumSystem.Web.Infrastructure.Extensions
 {
+    using ForumSystem.Common;
     using Microsoft.AspNetCore.Identity;
-
-    using Common;
 
     public static class IdentityOptionsExtensions
     {
